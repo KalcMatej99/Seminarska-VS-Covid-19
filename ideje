@@ -1,0 +1,55 @@
+Analiziral bom samo za EU države:
+
+---- Vpliv povprečne starosti države na št. rabljenih postelj/št.
+prebivalcev (Te podatke dobim iz (3) in (5))
+
+Vprašanja: Kako vpliva starost države na št. okuženih na
+prebivalca? Je bilo to razmerje nižje za države z nižjo povprečno
+starostjo? So res starejše osebe večji del okuženih?
+
+Podatki: Povprečna starost dobim iz spleta (te podatke moram še pobrat);
+         št. rabljenih postelj dobim iz all_bed_usage (3) in št.prebivalcev dobim iz (4)
+         
+         Uzamem podatke do peaka. Najbolj kritičen del. 
+
+---- Vpliv zasičenosti (št. rabljenih postelj/št.postelj) v bolnicah na
+fatalnost (mrtvi/ okuženi) (Te podatke dobim iz (3))
+
+Vprašanja: Je bilo zaradi zasičenosti v bolnicah povprečje mrtvih
+na št. okuženih višje? Če bi bilo več prostih postelj, bi bilo
+tudi manj mrtvih? Če bi bilo več prostih postelj, bi bilo tudi
+manj okuženih?
+
+Podatki: Št.postelj dobim iz all_bed_capacity iz (3);
+	 Št. rabljenih postelj dobim iz all_bed_usage (3)
+	 št.ozdravelih in št. okuženih dobim iz WHO (4)
+
+---- Vpliv št. rabljenih ICU postelj/št. ICU postelj na št.ozdravelih/št. okuženih (Te podatke dobim iz (3))
+
+Vprašanja: A je razmerje št. rabljenih ICU postelj/št. ICU postelj vplivalo na št.ozdravelih/št. okuženih?
+
+Podatki: št. ICU postelj dobim iz icu_bed_capacity (3);
+         št. rabljenih ICU postelj dobim iz icu_bed_usage (3);
+         št.ozdravelih in št. okuženih dobim iz WHO (4)
+
+---- Vpliv št. ventilatorjev na dan na fatalnost (Te podatke dobim iz (3))
+Podatki: št. ventilatorjev dobim iz peak_vent_day_mean (3) To je peak; fatalnost dobim iz WHO (4)
+
+
+podatki o mortatili ocause moratility 
+covid mrtvi/totalno št mrtvih za drzavo
+
+koliko dni rabi država do pika?
+
+peak ali cumulative peak?
+
+
+
+
+smrtnost do peaka in povp starost
+st dni do peaka povp starost
+st okuzenih do peaka in st dni do peaka
+st opravljenih testov na st populacije
+
+
+spiermanov 

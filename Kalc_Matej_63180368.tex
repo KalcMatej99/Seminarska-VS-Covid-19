@@ -1,0 +1,107 @@
+% To je predloga za poročilo projekta pripredmetu Osnove verjetnosti in
+% statistike.
+% Originalen avtor predloge je Blaž Zupan.
+% Za potrebe OVS je prilagodil Robert Cvitkovič
+% To predlogo lahko spremeniš v PDF dokument s pomočjo programa
+% pdflatex, ki je del standardne instalacije LaTeX programov.
+
+\documentclass[a4paper,11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, amsthm, amsfonts, mathtools}
+\usepackage{a4wide}
+\usepackage[slovene]{babel}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{float}
+\usepackage[pdftex,pdfpagelabels,bookmarks,hyperindex,hyperfigures]{hyperref}
+% \usepackage{hyperref}
+\hypersetup{
+pdffitwindow=true,              % window fit to page when opened
+pdftitle={Seminarska pri predmetu VIS},       % title
+pdfauthor={Matej Kalc},                % author
+pdfnewwindow=true,              % links in new window
+colorlinks=true,                % false: boxed links; true: colored links
+linkcolor=blue,                 % color of internal links
+citecolor=blue,                 % color of links to bibliography
+filecolor=blue,                 % color of file links
+urlcolor=cyan                   % color of external links
+}
+
+% \usepackage{tikz}
+% \usepackage{pgflibraryshapes}
+
+\usepackage[footnotesize,labelfont=bf,labelsep=period]{caption}
+\usepackage{enumerate}
+
+\newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{\texttt{doi:#1}}}
+\newcommand{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{\texttt{arXiv:#1}}}
+
+
+\title{Potek širjenja do viška Covid-19 v Evropi}
+\author{Matej Kalc} % (63180368)}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{Uvod}
+\subsection{Motivacija}
+
+% V tem razdelku, 
+% ki naj bo kratek in naj obsega en odstavek z do 150 besed, 
+% na kratko opišeš, kaj je bil cilj naloge.
+
+\emph{“Koronavirus je hujši kot vojna, kjer je sovražnik še vedno človek, s katerim se še
+vedno lahko ukvarjamo, medtem ko je kakršenkoli dogovor s smrtonosnim virusom,
+ki ogroža naše preživetje, nemogoč. (...)".} \\ \\
+Tako je izjavil G. Zuccarini. Lahko bi izjavili, da je Koronavirus tretja svetovna vojna, kjer se neviden sovražnik skriva med ljudmi. Ljudje lahko premagamo nevidnega sovražnika, le če primerno in provočasno ukrepamo s pravim orožjem. V taki bitki tudi študiji in analize podatkov o Koronavirusu so dobro orožje proti virusu, saj izvemo nekaj novega o našem sovražniku.
+
+
+\subsection{Cilji}
+Trdimo lahko, da so vse države v Evropski uniji preživele prvi val Koronavirus pred 19.julijem 2020. V seminarski bom analiziral kako se je virus širil po Evropi. Predvsem bom analiziral interval od začetka širjenja do vrhunca prvega vala virusa v vsaki evropski državi, ker je ta interval najzanimivejši, saj so v tem intervalu evropske države prvič pod vplivom virusa. Zanima nas tudi kako vsaka EU država dela dovolj testov, tako da bo zmanjšala bodoče okužbe. \\
+Cilj študija je analiza:
+\begin{itemize}
+\item{Vpliva povprečne starosti populacije države na smrtonosnost virusa, }
+\item{Vpliva števila dni do viška dnevnih okuženih primerov na delež okuženih do viška in }
+\item{Vpliva velikosti populacije na število opravljenih testov. }
+\end{itemize}
+
+
+\subsection{Raziskave o virusu}
+Veliko je spletnih strani, ki analizirajo in grafično prikazujejo podatke Covid-19. Inštitut za zdravstvene meritve in vrednotenje nudi spletno stran o Koronavirus, kjer so grafično prikazani podatki o okuženih, mrtvih, testih, socialna distanca ipd, ampak najzanimivejše so projekcije v času, ki stran nudi.
+
+\subsection{Poglavja}
+\begin{enumerate}
+\item{Uvod}
+\item{Opis virusa in njegovo širjenje}
+\item{Podatki}
+\item{Izračuni in rezultati}
+\item{Zaključki}
+\item{Literatura}
+\end{enumerate}
+
+\section{Opis virusa in njegovo širjenje}
+COVID-19 je nalezljiva bolezen, ki jo povzroča virus SARS-CoV-2. Dihalni virus se širi preko kašlja in kihanja. Prvi okuženec Covid-19 je bil zaznan na Kitajskem novembra 2019. Najprej se je dihaln virus širil na Kitajskem, Hubei in Wuhan. Na začetku leta 2020 se je začelo širjenje virusa po celem svetu. 11. marca 2020 je Svetovna zdravstvena organizacija WHO proglasila pandemijo. Iz statističnih podatkov je razvidno, da do vključno 19. julija 2020 je bilo okuženih več kot 14.2 milijonov ljudi v 188 državah, od katerih 600 tisoč je mrtvih in 8.02 milijonov je ozdravelih.
+\section{Podatki}
+Podatki so bili izbrani iz spleta. Podatke, ki bom rabil za statistični študij, so:
+\begin{enumerate}
+\item{Seznam Evropskih držav}
+\item{Povprečna starost populacije vsake Evropske države}
+\item{Število prebivalcev vsake Evropske države}
+\item{Dnevno število mrtvih v vsaki Evropski državi}
+\item{Dnevno število okuženih v vsaki Evropski državi
+\item{Datum vrhunca števila okuženih prvega vala v vsaki Evropski državi}
+\item{Datum vrhunca števila mrtvih prvega vala v vsaki Evropski državi}
+\item{Datum prve zazne okužbe v vsaki Evropski državi}
+\item{Dnevno število opravljemoh testov v vsaki Evropski državi}
+\end{enumerate}
+\section{Izračuni in rezultati}
+
+\section{Zaključki}
+\section{Literatura}
+https://en.wikipedia.org/wiki/List_of_countries_by_median_age
+https://en.wikipedia.org/wiki/Europe
+
+
+\end{document}
