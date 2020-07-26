@@ -7,7 +7,7 @@ with open('./../Podatki/List_of_EU_members.csv') as listOfEUmembersFile:
         peakDateOfInfectedPerCountry = csv.writer(
             peakDateOfInfectedPerCountryFile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
         peakDateOfInfectedPerCountry.writerow(
-            ["Country_Name", "Date_of_peak_of_infected", "Date_of_peak_of_deaths","Infected_to_peak","Deaths_to_peak"])
+            ["Country_Name", "Date_of_first_infected", "Date_of_first_death", "Date_of_peak_of_infected", "Date_of_peak_of_deaths", "Infected_to_peak", "Deaths_to_peak"])
 
         isFirstRow = True
         for row in listOfEUmembers:
@@ -20,6 +20,8 @@ with open('./../Podatki/List_of_EU_members.csv') as listOfEUmembersFile:
             maxDeathsPerDay = 0
             dayOfPeakofInfected = 0
             dayOfPeakofDeaths = 0
+            dayOfFirstInfected = 0
+            dayOfFirstDeath = 0
             cumulativeInfectedToPeak = 0
             cumulativeDeathsToPeak = 0
 
@@ -32,11 +34,15 @@ with open('./../Podatki/List_of_EU_members.csv') as listOfEUmembersFile:
                         newDeathsForDate = int(row2[6])
                         newInfectedForDate = int(row2[4])
 
-                        if newDeathsForDate >= maxDeathsPerDay:
+                        if newDeathsForDate > maxDeathsPerDay:
+                            if dayOfFirstDeath == 0:
+                                dayOfFirstDeath = date
                             dayOfPeakofDeaths = date
                             maxDeathsPerDay = newDeathsForDate
 
-                        if newInfectedForDate >= maxInfectedPerDay:
+                        if newInfectedForDate > maxInfectedPerDay:
+                            if dayOfFirstInfected == 0:
+                                dayOfFirstInfected = date
                             dayOfPeakofInfected = date
                             maxInfectedPerDay = newInfectedForDate
 
@@ -51,6 +57,5 @@ with open('./../Podatki/List_of_EU_members.csv') as listOfEUmembersFile:
                     if countryCodeInDataFile == codeOfCountry and dayOfPeakofDeaths == date:
                         cumulativeDeathsToPeak = row2[7]
 
-
             peakDateOfInfectedPerCountry.writerow(
-                [nameOfCountry, dayOfPeakofInfected, dayOfPeakofDeaths, cumulativeInfectedToPeak, cumulativeDeathsToPeak])
+                [nameOfCountry, dayOfFirstInfected, dayOfFirstDeath, dayOfPeakofInfected, dayOfPeakofDeaths, cumulativeInfectedToPeak, cumulativeDeathsToPeak])
