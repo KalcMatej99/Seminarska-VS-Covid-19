@@ -32,6 +32,39 @@ urlcolor=cyan                   % color of external links
 
 \usepackage[footnotesize,labelfont=bf,labelsep=period]{caption}
 \usepackage{enumerate}
+\usepackage{pdfpages}
+\usepackage{csvsimple}
+
+\begin{filecontents*}{db.csv}
+DR,KOD,MED,DPO,DPS,DVO,DVS,OV,MV,PREB,OTO,OTS
+Austria,AT,44.0,2020-02-25,2020-03-12,2020-03-27,2020-04-23,7029,494,9.025.715,38809,201454
+Belgium,BE,41.4,2020-02-04,2020-03-10,2020-04-11,2020-04-12,32778,4616,11.602.522,103714,109427
+Bulgaria,BG,42.7,2020-03-08,2020-03-12,2020-06-12,2020-06-06,3086,160,6.943.915,91083,81084
+Croatia,HR,43.0,2020-02-25,2020-03-25,2020-04-02,2020-04-20,963,47,4.101.782,8110,25566
+Cyprus,CY,36.8,2020-03-09,2020-03-25,2020-04-02,2020-03-25,320,3,1.190.007,8468,3849
+Czechia,CZ,42.1,2020-03-01,2020-03-23,2020-03-27,2020-04-15,2062,161,10.715.154,36089,148586
+Denmark,DK,42.2,2020-02-27,2020-03-15,2020-04-08,2020-04-05,5071,161,5.793.679,62063,50097
+Estonia,EE,42.7,2020-02-27,2020-03-26,2020-03-27,2020-04-03,538,11,1.328.655,9010,18172
+Finland,FI,42.5,2020-01-29,2020-03-21,2020-04-05,2020-04-22,1882,141,5.542.713,34486,76173
+France,FR,41.4,2020-01-24,2020-02-15,2020-04-01,2020-04-04,51477,6493,65.283.211,233494,282205
+Germany,DE,47.1,2020-01-28,2020-03-09,2020-03-20,2020-04-16,18323,3569,83.951.077,595836,2019592
+Greece,GR,44.5,2020-02-26,2020-03-12,2020-04-22,2020-04-05,2401,68,10.420.046,58847,26200
+Hungary,HU,42.3,2020-03-04,2020-03-15,2020-04-10,2020-04-24,1190,250,9.659.639,29041,57641
+Ireland,IE,36.8,2020-03-01,2020-03-11,2020-04-10,2020-04-26,7393,1063,4.953.657,68922,142512
+Italy,IT,45.5,2020-01-29,2020-02-22,2020-03-21,2020-03-28,53578,9136,60.465.251,239558,428323
+Latvia,LV,43.6,2020-03-02,2020-04-04,2020-03-24,2020-04-22,180,9,1.883.138,8281,40057
+Lithuania,LT,43.7,2020-02-28,2020-03-20,2020-04-04,2020-04-12,771,23,2.714.541,21467,40951
+Luxembourg,LU,39.3,2020-03-01,2020-03-13,2020-03-24,2020-04-12,875,62,628.614,11189,29881
+Malta,MT,41.8,2020-03-07,2020-04-09,2020-04-08,2020-06-02,293,9,441.612,14119,73236
+Netherlands,NL,42.6,2020-02-27,2020-03-06,2020-03-24,2020-04-08,4749,2101,17.138.553,45825,109414
+Poland,PL,40.7,2020-03-05,2020-03-12,2020-06-05,2020-04-25,25048,494,37.850.596,1006819,271678
+Portugal,PT,42.2,2020-03-02,2020-03-17,2020-04-11,2020-04-04,15472,246,10.193.282,179542,112892
+Romania,RO,41.1,2020-02-26,2020-03-23,2020-04-12,2020-05-01,5990,717,19.210.031,64385,175728
+Slovakia,SK,40.5,2020-03-06,2020-04-07,2020-04-17,2020-04-16,977,6,5.461.415,42768,40048
+Slovenia,SI,44.5,2020-03-04,2020-03-17,2020-03-13,2020-04-06,141,28,2.079.553,4228,28453
+Spain,ES,42.7,2020-01-31,2020-03-04,2020-04-01,2020-06-20,94417,28315,46.785.134,466271,3627852
+Sweden,SE,41.2,2020-01-31,2020-03-15,2020-06-23,2020-04-22,58932,1765,10.108.080,467798,105806
+\end{filecontents*}
 
 \newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{\texttt{doi:#1}}}
 \newcommand{\arxiv}[1]{\href{http://arxiv.org/abs/#1}{\texttt{arXiv:#1}}}
@@ -65,9 +98,9 @@ Cilj študija je analiza:
 \begin{itemize}
 \item{Vpliva media starosti populacije EU države na smrtonosnost virusa, }
 \item{Vpliva števila dni do viška dnevnih okuženih primerov na delež okuženih do viška in }
-\item{Vpliva velikosti populacije na število opravljenih testov. }
+\item{Vpliva števila dni do viška dnevnih okuženih primerov na delež opravljenih testov do viška. }
 \end{itemize}
-Testiral bom korelacijo med spremenljivkami. Izračunal bom intervale zaupanja, saj podatki niso realni, ker v teh niso vsebovani asimptomatici (KAKO SE REČE?).
+Testiral bom korelacijo med spremenljivkami. Izračunal bom intervale zaupanja, saj podatki niso realni, ker v teh niso vsebovani asimptomatiki.
 
 
 \subsection{Raziskave o virusu}
@@ -90,19 +123,41 @@ COVID-19 je nalezljiva bolezen, ki jo povzroča virus SARS-CoV-2. Dihalni virus 
 Podatki so bili izbrani iz spleta. Podatke, ki bom rabil za statistični študij, so:
 \begin{enumerate}
 \item{Seznam Evropskih držav}
-\item{Povprečna starost populacije vsake Evropske države}
+\item{Mediana starosti populacije vsake Evropske države}
 \item{Število prebivalcev vsake Evropske države}
 \item{Dnevno število mrtvih v vsaki Evropski državi}
-\item{Dnevno število okuženih v vsaki Evropski državi
+\item{Dnevno število okuženih v vsaki Evropski državi}
 \item{Datum vrhunca števila okuženih prvega vala v vsaki Evropski državi}
 \item{Datum vrhunca števila mrtvih prvega vala v vsaki Evropski državi}
+\item{Datum prve zaznane okužbe virusa v vsaki Evropski državi}
+\item{Datum prve zaznane smrti zaradi virusa v vsaki Evropski državi}
 \item{Dnevno število opravljemoh testov v vsaki Evropski državi}
 \item{Število mrtvih do vrhunca prvega vala v vsaki Evropski državi}
 \item{Število okuženih do vrhunca prvega vala v vsaki Evropski državi}
 \end{enumerate}
 
 Število mrtvih do vrhunca prvega vala v vsaki Evropski državi (9) je seštevek dnevno število mrtvih v vsaki Evropski državi(4) od datuma prvega mrtvega zaradi virusa do datum vrhunca števila mrtvih prvega vala v vsaki Evropski državi(7).
-Število okuženih do vrhunca prvega vala v vsaki Evropski državi (10) je seštevek dnevno število okuženih v vsaki Evropski državi(5) od datuma prvega mrtvega zaradi virusa do datum vrhunca števila okuženih prvega vala v vsaki Evropski državi(6).
+Število okuženih do vrhunca prvega vala v vsaki Evropski državi (10) je seštevek dnevno število okuženih v vsaki Evropski državi(5) od datuma prvega mrtvega zaradi virusa do datum vrhunca števila okuženih prvega vala v vsaki Evropski državi(6). Nabrani podatki so vidni v spodnji tabeli.\\
+\scalebox{0.7}{
+\csvautotabular{db.csv}
+}
+\paragraph{Legenda:}
+
+\begin{itemize}
+\item{DR - Ime države}
+\item{KOD - Koda države}
+\item{MED - Mediana starosti populacije}
+\item{MED}
+\item{DPO - Datum prvega zazanega okuženca}
+\item{DPS - Datum prve zaznane smrti}
+\item{DVO - Datum vrhunca okuženih v prvem valu}
+\item{DVS - Datum vrhunca smrti v prvem valu}
+\item{OV - Število okuženih od prve zaznane okužbe do vrhunca okuženih v prvem valu}
+\item{MV - Število mrtvih od prve zaznane smrti do vrhunca smrti v prvem valu}
+\item{PREB - Število prebivalcev}
+\item{OTO - Število opravljenih testov do vrhunca okužb v prvem valu}
+\item{OTS - Število opravljenih testov do vrhnca smrti v prvem valu}
+\end{itemize}
 
 \section{Izračuni in rezultati}
 Podatki iz prvega vala nam povejo koliko je bila država pripravljena na tako epidemijo.
@@ -116,7 +171,30 @@ Najprej definiramo fatalnost.
 \end{center} 
 Fatalnost je neka vrednost med 0 in 1, torej nek procent. Naj bo fatalnost prve polovice prvega vala razmerje med številom mrtvih prve polovice prvega vala in številom okuženih prvega vala. \\
 Za analizo vzamemo spremenljivki F in S, kjer F predstavlja fatalnost in S mediano starosti države. Spremenljivki F in S vsake države evropske unije sta prikazani v spodnjem grafu.
-\includegraphics[scale=0.7]{Vpliv_mediane_populacije_na_fatalnost_Covid-19_v_prvi_polovici_vala}
+\includegraphics[scale=0.55]{Vpliv_mediane_populacije_na_fatalnost_Covid-19_v_prvi_polovici_vala}
+
+Gledano navidezno ni nobenega trenda, kljub temu da vzorec vzame vpoštevvse države Evropske unije. Na prvi vtis sta si spremenljivki neodvisni. To lahko potrdim s sledečimi računi. Izračunamo Pearsonov koeficient korelacije, ki nam pove linearno povezanost spremeljivk S in F:
+
+\begin{center}
+\[\text{r} = \frac{Cov(S,F)}{\sigma_{S} \sigma_{F}} = 0.22\]
+\end{center} 
+kjer je \(\sigma_{S}\) standardni odklon spremenljivke S in \(\sigma_{F}\) standardni odklon spremenljivke F. Koeficient je zelo majhen, kar pomeni, da njihova linearna povezanost je zelo majhna. Mogoče pa sta si neliarno povezani. To lahko preverimo s Spearmanovim koeficientom korelacije. Izračunajmoga takole: 
+
+\begin{center}
+\[\rho = 1 - \frac{6\sum_{i}{}d_i^2}{N(N^2 - 1)} = 0.27\]
+\end{center} 
+kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov).
+Kot Pearsonov koeficient tudi Spearmanov koeficient je zelo majhen. Trdimo lahko, da spremenljivki S in F si nista močno povezani. To seveda še ne pomeni, da sta spremenljivki neodvisni. Izvedemo lahko f-test. Najprej nastavimo ničelno hipotezo \( H_0 \):
+\begin{center}
+\( H_0 \): Spremenljivki S (mediana starosti populacije) in F (fatalnost virusa) sta si neodvisni
+\end{center}
+Računamo \( R^2 \) (Coefficient of determination) in F:
+\[R^2 = 1 - \frac{\sum_{i}{}(y_i - \overset{..}{y_i})}{\sum_{i}{}(y_i - \overset{-}{y_i})} = 0.049\]
+kjer so \(y_i\) podatki, ki jih imamo na razpolago, \(\overset{..}{y_i}\) pa vrednosti, ki bi jih imela odvisna spremenljivka F (tj stopnja samomora) v primeru, da bi njene vrednosti ležale natanko na regresijski premici, ki smo jo dobili z metodo najmanjših kvadratov.
+
+\[F = \frac{R^2}{(p - 1)(1 - R^2)(n - p)} = 0.002055029 \]
+
+kjer p je število spremenljivk, \( R^2 \) je Koeficient odločnosti in n je število držav evropske unije. Ničelno hipotezo \( H_0 \) lahko zavrnemo, če F \ge \(F_t \). \(F_t\) je vrednost, ki prebermo iz porazdelitvene tabele distribucije F. Izberemo \(\alpha\) (significance level) = 0.05. Iz tabele lahko razberemo, da je \( F_t \) = 4.2417 (Gledamo stolpec p - 1 = 1 in vrstico n - 2 = 25 ). Velja da, F \lt \(F_t\), torej ne moremo zavreči ničelne hipoteze \(H_0\). Ker je vrednost F veliko manjša od vrednosti \(F_t\), silahko predstavljamo, da sta si spremenljivki S in F neodvisni.
 
 \subsection{Vpliv števila dni do viška dnevnih okuženih primerov na delež okuženih do viška}
 \subsection{Vpliv velikosti populacije na število opravljenih testov}
