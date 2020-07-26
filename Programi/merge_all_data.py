@@ -12,7 +12,7 @@ with open('./../Podatki/List_of_EU_members.csv') as listOfEUmembersFile, open('.
         populationPerEuCountryFile, delimiter=';')
     testsPerEuCountry = pd.read_csv(testsPerEuCountryFile, delimiter=',')
     db = csv.writer(
-        dbFile, delimiter=',', quotechar='|', quoting=csv.QUOTE_MINIMAL)
+        dbFile, delimiter=';', quotechar='|', quoting=csv.QUOTE_MINIMAL)
     db.writerow(
         ["Country_Name", "Country_Code", "Median_age", "Date_of_first_infected", "Date_of_first_death", "Date_of_peak_of_infected",
          "Date_of_peak_of_deaths", "Infected_to_peak", "Deaths_to_peak", "Population", "Number_of_tests_from_first_test_to_peak_of_infected",
@@ -39,4 +39,4 @@ with open('./../Podatki/List_of_EU_members.csv') as listOfEUmembersFile, open('.
                                    "Number_of_tests_from_first_test_to_peak_of_deaths"]
 
         db.writerow(
-            [nameofCountry, codeofCountry, medianAgeOfCountry, d1, d2, d3, d4, population, n1, n2])
+            [nameofCountry, codeofCountry, medianAgeOfCountry, d1, d2, d3, d4, infectedToPeak, deathsToPeak, population, n1, n2])
