@@ -15,7 +15,8 @@ u = mean(inf)
 
 n <- 27
 
-t <- 1.96
+t2 <- 1.96
+t <- 3.291
 
 country <- c()
 leftMargin <- c()
@@ -24,7 +25,7 @@ rightMargin <- c()
 for (ind in 1:27) {
 
 p <- inf[ind]
-margin <- t * sqrt((1 - p) * p / n)
+margin <- t * sqrt((1 - p) * p / db$Population[ind])
 
 country <- append(country, as.character(names[ind]))
 leftMargin <- append(leftMargin, round(p * 100, digits = 3))
