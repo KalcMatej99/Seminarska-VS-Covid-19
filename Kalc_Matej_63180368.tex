@@ -218,9 +218,13 @@ Za statistični študij bom najprej analiziral spremenljivke, predvsem če so no
 \end{enumerate}
 
 \subsubsection{Mediana starosti}
-Spremenljivka M mediana starosti je stolpec MED v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom.
-\includegraphics[scale=0.6]{histogram_mediane_starosti}
-\includegraphics[scale=0.6]{barplot_mediane_starosti}
+Spremenljivka M mediana starosti je stolpec MED v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom. \\
+\begin{center}
+\includegraphics[scale=0.6]{histogram_mediane_starosti}\\
+\end{center}
+\begin{center}
+\includegraphics[scale=0.6]{barplot_mediane_starosti}\\
+\end{center}
 Iz histograma lahko sumimo, da je spremenljivka normalna ali simetrična. To lahko preverimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Izračunajmoga takole:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.94\]
 kjer \(x_{(i)}\) je najmanjša vrednost v vzorcu, \(\overset{\_}{x}\) je povprečje median, \(a_i\) je i-ti element vektorja 0   
@@ -233,9 +237,14 @@ Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Če je p vrednost \(
 
 
 \subsubsection{Število dni do vrhunca prvega vala okuženih}
-Spremenljivka S število dni do vrhunca prvega vala okuženih starosti je razlika v dnevih stolpcev DVO in DPO v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom.
-\includegraphics[scale=0.6]{histogram_st_dni_do_peaka_okuzencev}
-\includegraphics[scale=0.6]{barplot_st_dni_do_peaka_okuzencev}
+Spremenljivka S število dni do vrhunca prvega vala okuženih starosti je razlika v dnevih stolpcev DVO in DPO v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom. \\
+
+\begin{center}
+\includegraphics[scale=0.6]{histogram_st_dni_do_peaka_okuzencev}\\
+\end{center}
+\begin{center}
+\includegraphics[scale=0.6]{barplot_st_dni_do_peaka_okuzencev}\\
+\end{center}
 Iz histograma ne moremo sumiti, da je spremenljivka normalna ali simetrična. To lahko preverimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.85.\]
  P vrednost za test je 
@@ -245,9 +254,14 @@ Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost 
 Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Če je p vrednost \(< \alpha\), lahko zavrnemo hipotezo \(H_0\). Ker je p vrednost \(> \alpha\) (0.052 \(>\) 0.05) ne moremo zavrnit hipoteze \(H_0\).
 
 \subsubsection{Število dni do vrhunca prvega vala mrtvih}
-Spremenljivka S število dni do vrhunca prvega vala mrtvih je razlika v dnevih stolpcev DVS in DPS v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom.
-\includegraphics[scale=0.6]{histogram_st_dni_do_peaka_mrtvih}
-\includegraphics[scale=0.6]{barplot_st_dni_do_peaka_mrtvih}
+Spremenljivka S število dni do vrhunca prvega vala mrtvih je razlika v dnevih stolpcev DVS in DPS v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom.\\
+
+\begin{center}
+\includegraphics[scale=0.6]{histogram_st_dni_do_peaka_mrtvih}\\
+\end{center}
+\begin{center}
+\includegraphics[scale=0.6]{barplot_st_dni_do_peaka_mrtvih}\\
+\end{center}
 Iz histograma ne moremo sumiti, da je spremenljivka normalna ali simetrična. To lahko preverimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.86235\]
  P vrednost za test je 
@@ -259,9 +273,13 @@ Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Če je p vrednost \(
 \subsubsection{Delež okuženih do vrhunca prvega vala okuženih}
 Spremenljivka D delež okuženih do vrhunca prvega vala okuženih definiramo:
 \[D = \frac{100 * \text{št. okuženih}}{\text{št. prebivalcev}}\]
-kjer število okuženih je stolpec OV v bazi in število prebivalcev je stolpec PREB v bazi. Naprej lahko prikažemo spremenljivko D z histogramom in barplotom.
-\includegraphics[scale=0.6]{histogram_delez_okuzenih}
-\includegraphics[scale=0.6]{barplot_delez_okuzenih}
+kjer število okuženih je stolpec OV v bazi in število prebivalcev je stolpec PREB v bazi. Naprej lahko prikažemo spremenljivko D z histogramom in barplotom.\\
+\begin{center}
+\includegraphics[scale=0.6]{histogram_delez_okuzenih}\\
+\end{center}
+\begin{center}
+\includegraphics[scale=0.6]{barplot_delez_okuzenih}\\
+\end{center}
 Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.62339\]
  P vrednost za test je 
@@ -278,9 +296,13 @@ kjer n je število prebivalcev države, p je delež okuženih, \(\Delta\) je raz
 \subsubsection{Delež mrtvih do vrhunca prvega vala okuženih}
 Spremenljivka D delež okuženih do vrhunca prvega vala okuženih definiramo:
 \[D = \frac{100 * \text{št. mrtvih}}{\text{št. okuženih}}\]
-kjer število okuženih je stolpec MV v bazi in število prebivalcev je stolpec OV v bazi. Naprej lahko prikažemo spremenljivko D z histogramom in barplotom.
-\includegraphics[scale=0.6]{histogram_fatalnost}
-\includegraphics[scale=0.6]{barplot_fatalnost}
+kjer število okuženih je stolpec MV v bazi in število prebivalcev je stolpec OV v bazi. Naprej lahko prikažemo spremenljivko D z histogramom in barplotom.\\
+\begin{center}
+\includegraphics[scale=0.6]{histogram_fatalnost}\\
+\end{center}
+\begin{center}
+\includegraphics[scale=0.6]{barplot_fatalnost}\\
+\end{center}
 Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.8851\]
  P vrednost za test je 
@@ -297,9 +319,13 @@ kjer n je število prebivalcev države, p je delež okuženih, \(\Delta\) je raz
 \subsubsection{Delež testov do vrhunca prvega vala okuženih}
 Spremenljivka T delež testov do vrhunca prvega vala okuženih definiramo:
 \[T = \frac{100 * \text{št. opravljenih testov}}{\text{št. prebivalcev}}\]
-kjer število opravljenih je stolpec OTO v bazi in število prebivalcev je stolpec PREB v bazi. Naprej lahko prikažemo spremenljivko T s histogramom in barplotom.
-\includegraphics[scale=0.6]{histogram_delez_testov}
-\includegraphics[scale=0.6]{barplot_delez_testov}
+kjer število opravljenih je stolpec OTO v bazi in število prebivalcev je stolpec PREB v bazi. Naprej lahko prikažemo spremenljivko T s histogramom in barplotom.\\
+\begin{center}
+\includegraphics[scale=0.6]{histogram_delez_testov}\\
+\end{center}
+\begin{center}
+\includegraphics[scale=0.6]{barplot_delez_testov}\\
+\end{center}
 Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.73562\]
  P vrednost za test je 
@@ -321,8 +347,10 @@ Zanima me kako je mediana starosti vplivala na druge spremenljivke in sicer na �
 
 \paragraph{Vpliv mediane starosti na število dni do vrhunca prvega vala okuženih}
 Sprašujemo se kakšna je korelacija med spremenljivko M mediana starosti (stolpec MED v bazi) in spremenljivko Š številom dni do vrhunca prvega vala okuženih. Podatke navedenoh spremenljivk lahkjo prikažemo z razsvenim grafom.
-
-\includegraphics[scale=0.6]{vpliv_med_populacije_na_st_dni_do_peaka_okuezenih}
+\\
+\begin{center}
+\includegraphics[scale=0.6]{vpliv_med_populacije_na_st_dni_do_peaka_okuezenih}\\
+\end{center}
 Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
@@ -341,8 +369,10 @@ Da bi bile spremenljivke M in Š v korelaciji, bi moral biti koeficient korelaci
 
 \paragraph{Vpliv mediane starosti na število dni do vrhunca prvega vala mrtvih}
 Sprašujemo se kakšna je korelacija med spremenljivko M mediana starosti (stolpec MED v bazi) in spremenljivko Š številom dni do vrhunca prvega vala mrtvih. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
-
-\includegraphics[scale=0.6]{vpliv_med_pop_na_st_dni_do_peaka_mrtvih}
+\\
+\begin{center}
+\includegraphics[scale=0.6]{vpliv_med_pop_na_st_dni_do_peaka_mrtvih}\\
+\end{center}
 Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
@@ -363,8 +393,10 @@ Da bi bile spremenljivke M in Š v korelaciji, bi moral biti koeficient korelaci
 Sprašujemo se kakšna je korelacija med spremenljivko M mediana starosti (stolpec MED v bazi) in spremenljivko D delež okuženih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
 \[D = \frac{100 * \text{št. okuženih}}{\text{št. prebivalcev}}\]
 kjer število okuženih je stolpec OV v bazi in število prebivalcev je stolpec PREB v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
-
-\includegraphics[scale=0.6]{vpliv_med_pop_na_delez_okuzencev}
+\\
+\begin{center}
+\includegraphics[scale=0.6]{vpliv_med_pop_na_delez_okuzencev}\\
+\end{center}
 Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
@@ -385,8 +417,10 @@ Da bi bile spremenljivke M in D v korelaciji, bi moral biti koeficient korelacij
 Sprašujemo se kakšna je korelacija med spremenljivko M mediana starosti (stolpec MED v bazi) in spremenljivko D delež mrtvih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
 \[D = \frac{100 * \text{št. mrtvih}}{\text{št. okuženih}}\]
 kjer število okuženih je stolpec MV v bazi in število prebivalcev je stolpec OV v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
-
-\includegraphics[scale=0.6]{vpliv_med_pop_na_fatalnost}
+\\
+\begin{center}
+\includegraphics[scale=0.6]{vpliv_med_pop_na_fatalnost}\\
+\end{center}
 Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
@@ -413,8 +447,10 @@ kjer število opravljenih je stolpec OTO v bazi in število prebivalcev je stolp
 Sprašujemo se kakšna je korelacija med spremenljivko T in spremenljivko D delež mrtvih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
 \[D = \frac{100 * \text{št. okuženih}}{\text{št. prebivalcev}}\]
 kjer število okuženih je stolpec OV v bazi in število prebivalcev je stolpec PREB v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
-
-\includegraphics[scale=0.6]{vpliv_deleza_testov_na_delez_okuzenih}
+\\
+\begin{center}
+\includegraphics[scale=0.6]{vpliv_deleza_testov_na_delez_okuzenih}\\
+\end{center}
 Iz grafa lahko zaznamo nek trend med spremenljivkama. Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
@@ -429,8 +465,10 @@ Da bi bile spremenljivke M in D v korelaciji, bi moral biti koeficient korelacij
 Sprašujemo se kakšna je korelacija med spremenljivko M mediana starosti (stolpec MED v bazi) in spremenljivko D delež mrtvih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
 \[D = \frac{100 * \text{št. mrtvih}}{\text{št. okuženih}}\]
 kjer število mrtvih je stolpec MV v bazi in število okuženih je stolpec OV v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
-
-\includegraphics[scale=0.6]{vpliv_delez_testov_na_delez_mrtvih}
+\\
+\begin{center}
+\includegraphics[scale=0.6]{vpliv_delez_testov_na_delez_mrtvih}\\
+\end{center}
 Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
@@ -447,7 +485,6 @@ Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izra�
 \[[r - \Delta, r + \Delta] = [-0.45, 0.3053]\]
 Da bi bile spremenljivke T in D v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7. Nobena vrednost v zgornejm intervalu, ne zadošča pogoju zaradi tega lahko smatramo, da sta si spremenljivki T in D neodvisni.
 
-
 \subsubsection{Število dni do vrha prvega vala okuženih}
 
 Zanima me kako je število dni do vrha prvega vala okuženih vpliva na druge spremenljivke in sicer na delež okuženih do vrhunca prvega vala okuženi in na delež mrtvih do vrhunca prvega vala okuženih. Spremenljivka Š število dni do vrhunca prvega vala okuženih starosti je razlika v dnevih
@@ -457,8 +494,10 @@ stolpcev DVO in DPO v bazi.
 Sprašujemo se kakšna je korelacija med spremenljivko Š in spremenljivko D delež mrtvih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
 \[D = \frac{100 * \text{št. okuženih}}{\text{št. prebivalcev}}\]
 kjer število okuženih je stolpec OV v bazi in število prebivalcev je stolpec PREB v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
-
-\includegraphics[scale=0.6]{vpliv_st_dni_do_peaka_mrtvih_na_delez_okuzencev}
+\\
+\begin{center}
+\includegraphics[scale=0.6]{vpliv_stevila_dni_do_peaka_okuzencev_na_delez_okuzenih}\\
+\end{center}
 Iz grafa lahko zaznamo nek trend med spremenljivkama. Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
@@ -479,8 +518,10 @@ Da bi bile spremenljivke Š in D v korelaciji, bi moral biti koeficient korelaci
 Sprašujemo se kakšna je korelacija med spremenljivko T in spremenljivko D delež mrtvih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
 \[D = \frac{100 * \text{št. mrtvih}}{\text{št. okuženih}}\]
 kjer število mrtvih je stolpec MV v bazi in število okuženih je stolpec OV v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
-
-\includegraphics[scale=0.6]{vpliv_stevila_dni_do_peaka_okuzencev_na_fatalnost}
+\\
+\begin{center}
+\includegraphics[scale=0.6]{vpliv_stevila_dni_do_peaka_okuzencev_na_fatalnost}\\
+\end{center}
 Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
@@ -495,10 +536,13 @@ kjer je \(\sigma_{Š}\) standardni odklon spremenljivke Š in \(\sigma_{D}\) sta
 kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov). Tudi Spearmanov koeficient je zelo majhen, negativen in blizu ničli. Ponovno slutimo, da sta si spremenljivki T in D neodvisni.
 Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izračunamo interval zaupanja za korelacijski koeficient. V R-ju lahko izračunamo 95\% interval zaupanja z ukazom cor.test(T,D, method = "pearson").
 \[[r - \Delta, r + \Delta] = [0.2644, 0.7898]\]
-Da bi bile spremenljivke Š in D v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7. Le majhen del zgornjega intervala zadošča pogoju zaradi tega lahko smatramo, da sta si spremenljivki Š in D nekorelirani.
+Da bi bile spremenljivke Š in D v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7. Le majhen del zgornjega intervala zadošča pogoju zaradi tega lahko smatramo, da sta si spremenljivki Š in D linearno nekorelirani.
 
 \section{Zaključki}
-
+Iz analize spremenljivk lahko sklepamo, da je spremenljivka mediane starosti normalno porazdeljena, kar je smiselno za države v istem območju in z podobnimi življenskimi dobami. Spremenljivke: število dni do vrhunca prvega vala okuženih, števila dni do vrhunca prvega vala mrtvih, delež okuženih, delež mrtvih in delež testov niso normalno porazdeljene. Sklepamo lahko, da na te spremenljivke vpliva čas, ki je potrebovala posamezna država za regulacije (maske, rokavice in socialno distanciranje), saj vsaka država je ukrepala poljubno. \\
+Iz korelacijske analiza lahko smatramo, da spremenljivka mediane starosti ni ne korelirana linearno ali nelinerano na število dni do vrhunca prvega vala okuženih, število dni do vrhunca prvega vala mrtvih, delež okuženih do vrhunca prvega vala okuženih, delež mrtvih do vrhunca prvega vala okuženih. Naj bo 0.7 meja za povezanost med dvemi spremenljivkam. Če je njihov korelacijski koeficient večji od 0.7 lahko smatramo da sta si pozitivno močno povezani. Če je njihov korelacijski koeficient manjši od -0.7 lahko smatramo da sta si negativno močno povezani.Tudi intervali zaupnja vseh štirih korelacij ne vsebujejo nobene vrednosti večje od 0.7 ali manjše od -0.7 zaradi tega se iz računov sluti, da spremenljivka mediana starosti ne vpliva na ostale izbrane spremenljivke. \\
+Korelacijska analiza deleža testov in drugih izbranih spremenljivk je privedla do zanimivih rezultatov. Izkaže se, da je spremenljivka deleža testov linearno povezana z deležom okuženih, saj če država opravi več testov lahko zazna več okužencev. Enako se ne izkaže za fatalnost virusa. Na fatalnost vplivajo tudi drugi faktorji, kot so zmogljivost bolnišnic in če je bolnik imel še druge bolezni. \\
+Korelacijska analiza število dni do vrha prvega vala okuženih in drugih izbranih spremenljivk je tudi privedla do zanimivih rezultatov. Stevilo dni do vrha prvega vala okuženih in delež okuženih sta si skoraj linearno povezani. Lahko zaklučimo, da je smiselno, da obstaja neka povezanost med spremenljivkima, saj v večjem številu dni se lahko zazna več okuženih ljudi. Podobno velja za spremenljivki število dni do vrha prvega vala okuženih in fatalnost, saj sta si skoraj pozitivno nelinearno povezani. Smatramo lahko, da daljša je prva polovica prvega vala okuženih več bo okuženih in posledično več bo mrtvih.
 
 \section{Literatura}
 
