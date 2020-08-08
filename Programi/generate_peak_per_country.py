@@ -53,8 +53,6 @@ with open('./../Podatki/List_of_EU_members.csv') as listOfEUmembersFile:
                     date = row2[0]
                     if countryCodeInDataFile == codeOfCountry and dayOfPeakofInfected == date:
                         cumulativeInfectedToPeak = row2[5]
-
-                    if countryCodeInDataFile == codeOfCountry and dayOfPeakofDeaths == date:
                         cumulativeDeathsToPeak = row2[7]
 
             peakDateOfInfectedPerCountry.writerow(

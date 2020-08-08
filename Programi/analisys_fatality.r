@@ -18,4 +18,16 @@ shapiro.test(prop)
 symmetry.test(prop)
 
 
-prop.test(db$Deaths_to_peak,db$Infected_to_peak)
+db <- read.csv(fileDB, header=TRUE, sep=",")
+df <- data.frame()
+
+for(index in 1:27) {
+  new_row <- 100 * round(as.numeric(prop.test(db$Deaths_to_peak[index],db$Infected_to_peak[index])$conf.int), 5)
+  df <- rbind(df, new_row)
+}
+
+namesOfCountrys <- db$Country_Name
+df <- cbind(namesOfCountrys, df)
+
+fileIntervalZaupanjaFatalnost <- '/home/matej/Documents/Seminarska-VS-Covid-19//Podatki/intervalZaupanjaFatalnost.csv'
+write.csv(df, fileIntervalZaupanjaFatalnost)

@@ -37,65 +37,97 @@ urlcolor=cyan                   % color of external links
 
 \begin{filecontents*}{db.csv}
 DR,KOD,MED,DPO,DPS,DVO,DVS,OV,MV,PREB,OTO,OTS
-Austria,AT,44.0,2020-02-25,2020-03-12,2020-03-27,2020-04-23,7029,494,9025715,38809,201454
-Belgium,BE,41.4,2020-02-04,2020-03-10,2020-04-11,2020-04-12,32778,4616,11602522,103714,109427
-Bulgaria,BG,42.7,2020-03-08,2020-03-12,2020-06-12,2020-06-06,3086,160,6943915,91083,81084
-Croatia,HR,43.0,2020-02-25,2020-03-25,2020-04-02,2020-04-20,963,47,4101782,8110,25566
-Cyprus,CY,36.8,2020-03-09,2020-03-25,2020-04-02,2020-03-25,320,3,1190007,8468,3849
-Czechia,CZ,42.1,2020-03-01,2020-03-23,2020-03-27,2020-04-15,2062,161,10715154,36089,148586
-Denmark,DK,42.2,2020-02-27,2020-03-15,2020-04-08,2020-04-05,5071,161,5793679,62063,50097
-Estonia,EE,42.7,2020-02-27,2020-03-26,2020-03-27,2020-04-03,538,11,1328655,9010,18172
-Finland,FI,42.5,2020-01-29,2020-03-21,2020-04-05,2020-04-22,1882,141,5542713,34486,76173
-France,FR,41.4,2020-01-24,2020-02-15,2020-04-01,2020-04-04,51477,6493,65283211,233494,282205
-Germany,DE,47.1,2020-01-28,2020-03-09,2020-03-20,2020-04-16,18323,3569,83951077,595836,2019592
-Greece,GR,44.5,2020-02-26,2020-03-12,2020-04-22,2020-04-05,2401,68,10420046,58847,26200
-Hungary,HU,42.3,2020-03-04,2020-03-15,2020-04-10,2020-04-24,1190,250,9659639,29041,57641
-Ireland,IE,36.8,2020-03-01,2020-03-11,2020-04-10,2020-04-26,7393,1063,4953657,68922,142512
-Italy,IT,45.5,2020-01-29,2020-02-22,2020-03-21,2020-03-28,53578,9136,60465251,239558,428323
-Latvia,LV,43.6,2020-03-02,2020-04-04,2020-03-24,2020-04-22,180,9,1883138,8281,40057
-Lithuania,LT,43.7,2020-02-28,2020-03-20,2020-04-04,2020-04-12,771,23,2714541,21467,40951
-Luxembourg,LU,39.3,2020-03-01,2020-03-13,2020-03-24,2020-04-12,875,62,628614,11189,29881
-Malta,MT,41.8,2020-03-07,2020-04-09,2020-04-08,2020-06-02,293,9,441612,14119,73236
-Netherlands,NL,42.6,2020-02-27,2020-03-06,2020-03-24,2020-04-08,4749,2101,17138553,45825,109414
-Poland,PL,40.7,2020-03-05,2020-03-12,2020-06-05,2020-04-25,25048,494,37850596,1006819,271678
-Portugal,PT,42.2,2020-03-02,2020-03-17,2020-04-11,2020-04-04,15472,246,10193282,179542,112892
-Romania,RO,41.1,2020-02-26,2020-03-23,2020-04-12,2020-05-01,5990,717,19210031,64385,175728
-Slovakia,SK,40.5,2020-03-06,2020-04-07,2020-04-17,2020-04-16,977,6,5461415,42768,40048
-Slovenia,SI,44.5,2020-03-04,2020-03-17,2020-03-13,2020-04-06,141,28,2079553,4228,28453
-Spain,ES,42.7,2020-01-31,2020-03-04,2020-04-01,2020-06-20,94417,28315,46785134,466271,3627852
-Sweden,SE,41.2,2020-01-31,2020-03-15,2020-06-23,2020-04-22,58932,1765,10108080,467798,105806
+Austria,AT,44.0,2020-02-25,2020-03-12,2020-03-27,2020-04-23,7029,52,9025715,38809,201454
+Belgium,BE,41.4,2020-02-04,2020-03-10,2020-04-11,2020-04-12,32778,4273,11602522,103714,109427
+Bulgaria,BG,42.7,2020-03-08,2020-03-12,2020-06-12,2020-06-06,3086,168,6943915,91083,81084
+Croatia,HR,43.0,2020-02-25,2020-03-25,2020-04-02,2020-04-20,963,6,4101782,8110,25566
+Cyprus,CY,36.8,2020-03-09,2020-03-25,2020-04-02,2020-03-25,320,9,1190007,8468,3849
+Czechia,CZ,42.1,2020-03-01,2020-03-23,2020-03-27,2020-04-15,2062,9,10715154,36089,148586
+Denmark,DK,42.2,2020-02-27,2020-03-15,2020-04-08,2020-04-05,5071,203,5793679,62063,50097
+Estonia,EE,42.7,2020-02-27,2020-03-26,2020-03-27,2020-04-03,538,1,1328655,9010,18172
+Finland,FI,42.5,2020-01-29,2020-03-21,2020-04-05,2020-04-22,1882,25,5542713,34486,76173
+France,FR,41.4,2020-01-24,2020-02-15,2020-04-01,2020-04-04,51477,3514,65283211,233494,282205
+Germany,DE,47.1,2020-01-28,2020-03-09,2020-03-20,2020-04-16,18323,45,83951077,595836,2019592
+Greece,GR,44.5,2020-02-26,2020-03-12,2020-04-22,2020-04-05,2401,121,10420046,58847,26200
+Hungary,HU,42.3,2020-03-04,2020-03-15,2020-04-10,2020-04-24,1190,77,9659639,29041,57641
+Ireland,IE,36.8,2020-03-01,2020-03-11,2020-04-10,2020-04-26,7393,263,4953657,68922,142512
+Italy,IT,45.5,2020-01-29,2020-02-22,2020-03-21,2020-03-28,53578,4827,60465251,239558,428323
+Latvia,LV,43.6,2020-03-02,2020-04-04,2020-03-24,2020-04-22,180,0,1883138,8281,40057
+Lithuania,LT,43.7,2020-02-28,2020-03-20,2020-04-04,2020-04-12,771,9,2714541,21467,40951
+Luxembourg,LU,39.3,2020-03-01,2020-03-13,2020-03-24,2020-04-12,875,8,628614,11189,29881
+Malta,MT,41.8,2020-03-07,2020-04-09,2020-04-08,2020-06-02,293,0,441612,14119,73236
+Netherlands,NL,42.6,2020-02-27,2020-03-06,2020-03-24,2020-04-08,4749,213,17138553,45825,109414
+Poland,PL,40.7,2020-03-05,2020-03-12,2020-06-05,2020-04-25,25048,1117,37850596,1006819,271678
+Portugal,PT,42.2,2020-03-02,2020-03-17,2020-04-11,2020-04-04,15472,435,10193282,179542,112892
+Romania,RO,41.1,2020-02-26,2020-03-23,2020-04-12,2020-05-01,5990,282,19210031,64385,175728
+Slovakia,SK,40.5,2020-03-06,2020-04-07,2020-04-17,2020-04-16,977,8,5461415,42768,40048
+Slovenia,SI,44.5,2020-03-04,2020-03-17,2020-03-13,2020-04-06,141,0,2079553,4228,28453
+Spain,ES,42.7,2020-01-31,2020-03-04,2020-04-01,2020-06-20,94417,8189,46785134,466271,3627852
+Sweden,SE,41.2,2020-01-31,2020-03-15,2020-06-23,2020-04-22,58932,5122,10108080,467798,105806
 \end{filecontents*}
 
 
-\begin{filecontents*}{dbMargins.csv}
-Ime drzave,okuzeni,Najslabsi mozen scenarij okuzenih
-Austria,0.078\%,0.081\%
-Belgium,0.283\%,0.288\%
-Bulgaria,0.044\%,0.047\%
-Croatia,0.023\%,0.026\%
-Cyprus,0.027\%,0.032\%
-Czechia,0.019\%,0.021\%
-Denmark,0.088\%,0.092\%
-Estonia,0.04\%,0.046\%
-Finland,0.034\%,0.037\%
-France,0.079\%,0.08\%
+\begin{filecontents*}{dbIntervalZaupanjaDelezOkuzenih.csv}
+Ime drzave,Spodnja meja intervala,Zgornja meja intervala
+Austria,0.076\%,0.08\%
+Belgium,0.279\%,0.286\%
+Bulgaria,0.043\%,0.046\%
+Croatia,0.022\%,0.025\%
+Cyprus,0.024\%,0.03\%
+Czechia,0.018\%,0.02\%
+Denmark,0.085\%,0.09\%
+Estonia,0.037\%,0.044\%
+Finland,0.032\%,0.036\%
+France,0.078\%,0.08\%
 Germany,0.022\%,0.022\%
-Greece,0.023\%,0.025\%
+Greece,0.022\%,0.024\%
 Hungary,0.012\%,0.013\%
-Ireland,0.149\%,0.155\%
-Italy,0.089\%,0.09\%
-Latvia,0.01\%,0.012\%
-Lithuania,0.028\%,0.032\%
-Luxembourg,0.139\%,0.155\%
-Malta,0.066\%,0.079\%
-Netherlands,0.028\%,0.029\%
-Poland,0.066\%,0.068\%
-Portugal,0.152\%,0.156\%
-Romania,0.031\%,0.033\%
-Slovakia,0.018\%,0.02\%
-Slovenia,0.007\%,0.009\%
-Spain,0.202\%,0.204\%
-Sweden,0.583\%,0.591\%
+Ireland,0.146\%,0.153\%
+Italy,0.088\%,0.089\%
+Latvia,0.008\%,0.011\%
+Lithuania,0.026\%,0.03\%
+Luxembourg,0.13\%,0.149\%
+Malta,0.059\%,0.075\%
+Netherlands,0.027\%,0.029\%
+Poland,0.065\%,0.067\%
+Portugal,0.149\%,0.154\%
+Romania,0.03\%,0.032\%
+Slovakia,0.017\%,0.019\%
+Slovenia,0.006\%,0.008\%
+Spain,0.201\%,0.203\%
+Sweden,0.578\%,0.588\%
+\end{filecontents*}
+
+
+\begin{filecontents*}{dbIntervalZaupanjaFatalnost.csv}
+Ime drzave,Spodnja meja intervala,Zgornja meja intervala
+Austria,0.558\%,0.977\%
+Belgium,12.674\%,13.407\%
+Bulgaria,4.682\%,6.319\%
+Croatia,0.254\%,1.423\%
+Cyprus,1.379\%,5.458\%
+Czechia,0.213\%,0.859\%
+Denmark,3.488\%,4.589\%
+Estonia,0.01\%,1.198\%
+Finland,0.88\%,1.985\%
+France,6.611\%,7.048\%
+Germany,0.181\%,0.332\%
+Greece,4.215\%,6.011\%
+Hungary,5.17\%,8.059\%
+Ireland,3.152\%,4.011\%
+Italy,8.769\%,9.256\%
+Latvia,0\%,2.604\%
+Lithuania,0.571\%,2.287\%
+Luxembourg,0.426\%,1.869\%
+Malta,0\%,1.613\%
+Netherlands,3.922\%,5.123\%
+Poland,4.209\%,4.724\%
+Portugal,2.559\%,3.087\%
+Romania,4.192\%,5.283\%
+Slovakia,0.381\%,1.675\%
+Slovenia,0\%,3.306\%
+Spain,8.495\%,8.855\%
+Sweden,8.466\%,8.922\%
 \end{filecontents*}
 
 \newcommand{\doi}[1]{\href{http://dx.doi.org/#1}{\texttt{doi:#1}}}
@@ -103,7 +135,7 @@ Sweden,0.583\%,0.591\%
 \graphicspath{ {./Slike/} }
 
 
-\title{Potek širjenja do viška Covid-19 v prvem valu v Evropski uniji}
+\title{Covid-19: Potek širjenja do viška prvega vala v Evropski uniji}
 \author{Matej Kalc} % (63180368)}
 \date{\today}
 
@@ -121,23 +153,22 @@ Sweden,0.583\%,0.591\%
 \emph{“Koronavirus je hujši kot vojna, kjer je sovražnik še vedno človek, s katerim se še
 vedno lahko ukvarjamo, medtem ko je kakršenkoli dogovor s smrtonosnim virusom,
 ki ogroža naše preživetje, nemogoč. (...)".} \cite{zucc}\\ \\
-Tako je izjavil G. Zuccarini. Lahko bi izjavili, da je Koronavirus tretja svetovna vojna, kjer se neviden sovražnik skriva med ljudmi. Ogroža ljudem življenje, nekaterim pa ga tudi odvzame. Ljudje lahko premagamo nevidnega sovražnika, le če primerno in provočasno ukrepamo s pravim orožjem, kot so samozavest in ukrep človeka. V taki bitki tudi študiji in analize podatkov so dobro orožje proti virusu, saj izvemo nekaj novega o našem sovražniku. Mogoče eden izmed teh nam bom dal možnost odkritja cepiva zdravilo proti virusu, toda dokler tega ne ugotovimo ostaja edina možnost uporaba mask, razkužil in podobno. Zanima me kako so ljudje odzvali na epidemijo. Zanima me katere države so bile najboljše in katere najslabše organizirane za preprečevanje okužbe. Ker je epidemija še v teku, bom kot vzorec izbral države Evropske Unije, ker se je v teh epidemija sprožila približno sočasno. 
+Tako je izjavil G. Zuccarini. Lahko bi izjavili, da je Koronavirus tretja svetovna vojna, kjer se neviden sovražnik skriva med ljudmi. Ogroža ljudem življenje, nekaterim pa ga tudi odvzame. Ljudje lahko premagamo nevidnega sovražnika, le če primerno in provočasno ukrepamo s pravim orožjem, kot so samozavest in ukrep človeka. V taki bitki tudi študiji in analize podatkov so dobro orožje proti virusu, saj nam povejo nekaj novega o našem sovražniku. Mogoče eden izmed teh nam bo dal možnost odkritja cepiva proti virusu, toda dokler tega ne najdemo ostaja edina možnost uporaba mask, razkužil in distanca. Zanima me kako so se ljudje odzvali na epidemijo in katere države so bile najboljše in katere najslabše organizirane za preprečevanje okužbe. Ker je epidemija še v teku, bom kot vzorec izbral države Evropske Unije, ker se je v teh epidemija sprožila približno sočasno. 
 
 
 \subsection{Cilji}
-Trdimo lahko, da so vse države v Evropski uniji \cite{eu} preživele prvi val Koronavirus pred 19.julijem 2020. V seminarski bom analiziral kako se je virus širil po državah Evropske unije. Predvsem bom analiziral interval od začetka širjenja do vrhunca prvega vala virusa v vsaki državi evropske unije, ker je ta interval najzanimivejši, saj so v tem intervalu države evropske unije prvič pod vplivom virusa. \\
+Trdimo lahko, da so vse države v Evropski uniji \cite{eu} preživele prvi val Koronavirusa pred 19.julijem 2020. V seminarski bom analiziral kako se je virus širil po državah evropske unije. Predvsem bom analiziral interval od začetka širjenja do vrhunca prvega vala v vsaki državi, ker je ta interval najzanimivejši, saj se države prvič soočajo s takim virusom. \\
 Cilj študija je analiza:
 \begin{itemize}
-\item{Vpliva števila dni do viška dnevnih okuženih primerov na delež okuženih do viška,}
-\item{Realno število okuženih v prvem delu prvega vala,}
-\item{Vpliva mediane starosti EU države na delež okuženih in}
-\item{Vpliva media starosti populacije EU države na fatalnost virusa.}
+\item{Analiza spremenljivk,}
+\item{Korelacijska analiza in}
+\item{Primerjava spremenljivk med državami.}
 \end{itemize}
-Testiral bom korelacijo med spremenljivkami in izračunal bom intervale zaupanja, saj podatki niso realni, ker v teh niso vsebovani asimptomatiki.
+Testiral bom korelacijo med spremenljivkami in izračunal intervale zaupanja, saj podatki niso realni, ker v teh niso vsebovani asimptomatiki.
 
 \subsection{Raziskave o virusu}
-Veliko je spletnih strani, ki analizirajo in grafično prikazujejo podatke Covid-19. Naštel bom eno, ki me je motivirala za seminarsko. \\
-Inštitut za zdravstvene meritve in vrednotenje IHME nudi spletno stran o Koronavirus \cite{cvd19IHME}, kjer so grafično prikazani podatki o okuženih, mrtvih, testih, socialna distanca ipd, ampak najzanimivejše so projekcije v času, ki stran nudi. IHME-ove projekcije COVID-19 so bile razvite kot odziv na zahteve Medicinske šole Univerze v Washingtonu in drugih ameriških bolnišničnih sistemov in vladnih držav, ki si prizadevajo za določitev, kdaj bo COVID-19 premagal njihovo sposobnost oskrbe bolnikov. Napovedi kažejo povpraševanje po bolnišničnih storitvah, dnevne in kumulativne smrti zaradi COVID-19, stopnje okužbe in testiranja ter vpliv socialne distanciranja, ki ga organizira država in država (za izbrane lokacije).
+Veliko je spletnih strani, ki analizirajo in grafično prikazujejo podatke Covid-a-19. Omenil bom tisto, ki me je motivirala za izdelavo seminarske. \\
+Inštitut za zdravstvene meritve in vrednotenje IHME nudi spletno stran o Koronavirus \cite{cvd19IHME}, kjer so grafično prikazani podatki o okuženih, mrtvih, analizah, socialni distanci ipd, ampak najzanimivejše so projekcije v času, ki stran nudi. IHME-ove projekcije COVID-19 so bile razvite kot odziv na zahteve medicinske univerze v Washingtonu in drugih ameriških bolnišničnih sistemov. Napovedi kažejo povpraševanje po storitvah v bolnišnicah, dnevne in kumulativne smrti zaradi COVID-a-19, stopnje okužbe in analizah ter vpliv socialnega distanciranja, ki ga zahteva država.
 
 \subsection{Poglavja}
 \begin{enumerate}
@@ -150,26 +181,9 @@ Inštitut za zdravstvene meritve in vrednotenje IHME nudi spletno stran o Korona
 \end{enumerate}
 
 \section{Opis virusa in njegovo širjenje}
-COVID-19 je nalezljiva bolezen, ki jo povzroča virus SARS-CoV-2. Dihalni virus se širi preko kašlja in kihanja. Prvi okuženec Covid-19 je bil zaznan na Kitajskem novembra 2019. Najprej se je dihaln virus širil na Kitajskem, Hubei in Wuhan. Na začetku leta 2020 se je začelo širjenje virusa po celem svetu. 11. marca 2020 je Svetovna zdravstvena organizacija WHO proglasila pandemijo. Iz statističnih podatkov je razvidno, da do vključno 19. julija 2020 je bilo okuženih več kot 14.2 milijonov ljudi v 188 državah, od katerih 600 tisoč je mrtvih in 8.02 milijonov je ozdravelih. Trdimo lahko, da je ta virus leta 2020 močno vplival na države po celem svetu.
+COVID-19 je nalezljiva bolezen, ki jo povzroča virus SARS-CoV-2. Dihalni virus se širi preko kapljice sline in sluzi okuženih ljudi. Prvi okužen Covid-a-19 je bil zaznan na Kitajskem novembra 2019. Najprej se je dihaln virus širil na Kitajskem, v Hubeju in Wuhanu. Na začetku leta 2020 se je začelo širjenje virusa po celem svetu. 11. marca 2020 je Svetovna zdravstvena organizacija WHO proglasila pandemijo. Iz statističnih podatkov je razvidno, da do vključno 19. julija 2020 je bilo okuženih več kot 14.2 milijonov ljudi v 188 državah, od katerih 600 tisoč je mrtvih in 8.02 milijonov je ozdravelih. Trdimo lahko, da je ta virus leta 2020 močno vplival na države po celem svetu.
 \section{Podatki}
-Podatki so bili izbrani iz spleta. Podatke, ki bom rabil za statistični študij, so:
-\begin{enumerate}
-\item{Seznam držav Evropske unije}
-\item{Mediana starosti populacije vsake države Evropske unije}
-\item{Število prebivalcev vsake države Evropske unije}
-\item{Dnevno število mrtvih v vsaki državi Evropske unije}
-\item{Dnevno število okuženih v vsaki državi Evropske unije}
-\item{Datum vrhunca števila okuženih prvega vala v vsaki državi Evropske unije}
-\item{Datum vrhunca števila mrtvih prvega vala v vsaki državi Evropske unije}
-\item{Datum prve zaznane okužbe virusa v vsaki državi Evropske unije}
-\item{Datum prve zaznane smrti zaradi virusa v vsaki državi Evropske unije}
-\item{Dnevno število opravljemoh testov v vsaki državi Evropske unije}
-\item{Število mrtvih do vrhunca prvega vala v vsaki državi Evropske unije}
-\item{Število okuženih do vrhunca prvega vala v vsaki državi Evropske unije}
-\end{enumerate}
-
-Število mrtvih do vrhunca prvega vala v vsaki državi evropske unije (9) je seštevek dnevno število mrtvih v vsaki državi evropske unije (4) od datuma prvega mrtvega zaradi virusa do datum vrhunca števila mrtvih prvega vala v vsaki državi evropske unije (7).
-Število okuženih do vrhunca prvega vala v vsaki državi evropske unije (10) je seštevek dnevno število okuženih v vsaki državi evropske unije (5) od datuma prvega mrtvega zaradi virusa do datum vrhunca števila okuženih prvega vala v vsaki državi evropske unije (6). Nabrani podatki so vidni v spodnji tabeli.\\
+Podatki so bili izbrani iz spleta. Podatke, ki bom rabil za statistični študij, so prikazani v spodnji tabeli. \\
 \scalebox{0.7}{
 \csvautotabular{db.csv}
 }
@@ -184,7 +198,7 @@ Podatki so bili izbrani iz spleta. Podatke, ki bom rabil za statistični študij
 \item{DVO - Datum vrhunca okuženih v prvem valu}
 \item{DVS - Datum vrhunca smrti v prvem valu}
 \item{OV - Število okuženih od prve zaznane okužbe do vrhunca okuženih v prvem valu}
-\item{MV - Število mrtvih od prve zaznane smrti do vrhunca smrti v prvem valu}
+\item{MV - Število mrtvih od prve zaznane smrti do vrhunca okućenih v prvem valu}
 \item{PREB - Število prebivalcev}
 \item{OTO - Število opravljenih testov do vrhunca okužb v prvem valu}
 \item{OTS - Število opravljenih testov do vrhnca smrti v prvem valu}
@@ -192,114 +206,299 @@ Podatki so bili izbrani iz spleta. Podatke, ki bom rabil za statistični študij
 
 \section{Izračuni in rezultati}
 
-\subsection{Vpliv števila dni do viška dnevnih okuženih primerov na delež okuženih do viška}
-Zanima me kako število dni do viška dnevnih okuženih primerov vpliva na delež okuženih do viška. Naj bosta
-\begin{center}
-\[\textbf{število dni do viška} = \text{datum vrhunca okuženih} - \text{datum prvega zaznanega okuženca}\]
-\end{center}  in 
+\subsection{Analiza spremenljivk}
+Za statistični študij bom najprej analiziral spremenljivke, predvsem če so normalne in simetrične Spodnje spremenljivke veljajo le za države evropske unije. Spremenljivke so:
+\begin{enumerate}
+\item{Mediana starosti}
+\item{Število dni do vrhunca prvega vala okuženih}
+\item{Število dni do vrhunca prvega vala mrtvih}
+\item{Delež okuženih do vrhunca prvega vala okuženih}
+\item{Delež mrtvih do vrhunca prvega vala okuženih}
+\item{Delež testov do vrhunca prvega vala okuženih}
+\end{enumerate}
 
-\begin{center}
-\[\textbf{delež okuženih} = \frac{100 \text{ \(\times\) število okuženih}}{\text{število prebivalcev}}.\]
-\end{center} 
+\subsubsection{Mediana starosti}
+Spremenljivka M mediana starosti je stolpec MED v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom.
+\includegraphics[scale=0.6]{histogram_mediane_starosti}
+\includegraphics[scale=0.6]{barplot_mediane_starosti}
+Iz histograma lahko sumimo, da je spremenljivka normalna ali simetrična. To lahko preverimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Izračunajmoga takole:
+\[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.94\]
+kjer \(x_{(i)}\) je najmanjša vrednost v vzorcu, \(\overset{\_}{x}\) je povprečje median, \(a_i\) je i-ti element vektorja 0   
+\[(a_1,...,a_n) = \frac{m^T V^{-1}}{C}\]
+kjer \( C = \left\| V^{-1}m \right\|\) in vektor \(m = (m_1,...,m_n)^T\) je sestavljen iz pričakovanih vrednosti statističnih podatkov o vrstnem redu neodvisnih in identično razporejenih naključnih spremenljivk, vzorčenih iz standardne normalne porazdelitve. P vrednost za test je 
+\[ p-value = 0.1218. \]
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost p manjša od \(\alpha\), zavržemo \(H_0\). Ker je \(p > \alpha\) (0.1218 \(>\) 0.05), ne moremo zavreči ničelne hipoteze. Iz računa lahko slutimo, da spremenljivka ni normalno porazdeljena. Testiramo lahko, če je spremenljivka M simetrična. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. V R-ju je to ukaz symmetry.test(X, option = "MGG")\cite{lawstat}, kjer X je poljuben vektor. Naj bo ničelna hipoteza \(H_0\): Spremenljivka M je simetrična in alternativna hipoteza \(H_1\): spremenljivka M je asimterična. Za test spremenljivke S dobimo rezultate:
+\[\text{Test statistike} = -0.42212 \text{ in p-value} =  0.684.\]
+Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Če je p vrednost \(< \alpha\), lahko zavrnemo hipotezo \(H_0\). Ker je p vrednost \(> \alpha\) (0.684 \(>\) 0.05) ne moremo zavrnit hipoteze \(H_0\). Zaradi velikega koeficienta p lahko smatramo, da je spremenljivka simetrična.
 
-Naj bo spremenljivka N število dni do viška prvega vala, ki je razlika v dnevih datuma vrhunca okuženih v prvem valu (stolpec DVO v bazi) in datuma prvega zaznanega okuženca (stolpec DPO v bazi).  Naj bo spremenljivka D deleˇz okuˇzenih, ki je razmerje med številom okuˇzenih (stolpec OV v bazi) in številom prebivalcev (stolpec PREB v bazi). Spodnji graf prikazuje poidatke o spremenljivkah.
 
-\includegraphics[scale=0.6]{Vpliv_stevila_dni_do_viska_dnevnih_okuzenih_primerov_na_delez_okuzenih_v_prvi_polovici_prvega_vala}
+\subsubsection{Število dni do vrhunca prvega vala okuženih}
+Spremenljivka S število dni do vrhunca prvega vala okuženih starosti je razlika v dnevih stolpcev DVO in DPO v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom.
+\includegraphics[scale=0.6]{histogram_st_dni_do_peaka_okuzencev}
+\includegraphics[scale=0.6]{barplot_st_dni_do_peaka_okuzencev}
+Iz histograma ne moremo sumiti, da je spremenljivka normalna ali simetrična. To lahko preverimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
+\[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.85.\]
+ P vrednost za test je 
+\[ p-value = 0.00126. \]
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost p manjša od \(\alpha\), zavržemo \(H_0\). Ker je \(p < \alpha\) (0.00126 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. V R-ju je to ukaz symmetry.test(X, option = "MGG")\cite{lawstat}, kjer X je poljuben vektor. Naj bo ničelna hipoteza \(H_0\): Spremenljivka S je simetrična in alternativna hipoteza \(H_1\): spremenljivka S je asimterična. Za test spremenljivke S dobimo rezultate:
+\[\text{Test statistike} = 2.3151 \text{ in p-value} = 0.052.\]
+Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Če je p vrednost \(< \alpha\), lahko zavrnemo hipotezo \(H_0\). Ker je p vrednost \(> \alpha\) (0.052 \(>\) 0.05) ne moremo zavrnit hipoteze \(H_0\).
 
-Iz grafa je razvidno da obstaja nek trend. Izračunajumo povezanost spremenljivk s Pearsonovim koeficientom korelacije:
+\subsubsection{Število dni do vrhunca prvega vala mrtvih}
+Spremenljivka S število dni do vrhunca prvega vala mrtvih je razlika v dnevih stolpcev DVS in DPS v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom.
+\includegraphics[scale=0.6]{histogram_st_dni_do_peaka_mrtvih}
+\includegraphics[scale=0.6]{barplot_st_dni_do_peaka_mrtvih}
+Iz histograma ne moremo sumiti, da je spremenljivka normalna ali simetrična. To lahko preverimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
+\[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.86235\]
+ P vrednost za test je 
+\[ p-value = 0.00204. \]
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost p manjša od \(\alpha\), zavržemo \(H_0\). Ker je \(p < \alpha\) (0.00204 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. V R-ju je to ukaz symmetry.test(X, option = "MGG")\cite{lawstat}, kjer X je poljuben vektor. Naj bo ničelna hipoteza \(H_0\): Spremenljivka S je simetrična in alternativna hipoteza \(H_1\): spremenljivka S je asimterična. Za test spremenljivke S dobimo rezultate:
+\[\text{Test statistike} = 0.63107 \text{ in p-value} =  0.59.\]
+Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Če je p vrednost \(< \alpha\), lahko zavrnemo hipotezo \(H_0\). Ker je p vrednost \(> \alpha\) (0.59 \(>\) 0.05) ne moremo zavrnit hipoteze \(H_0\).
 
-\begin{center}
-\[\text{r} = \frac{Cov(N,D)}{\sigma_{N} \sigma_{D}} = 0.676\]
-\end{center} 
-kjer je \(\sigma_{N}\) standardni odklon spremenljivke N in \(\sigma_{D}\) standardni odklon spremenljivke D. Koeficient ni dovolj velik, da bi lahko smatrali, da obstaja močna povezanost med spremenljivkima.
-
-\subsection{Realno število okuženih v prvem delu prvega vala}
-Iz analize 4.1 opažamo, da obstaja neka povezanost med številom dni do viška okuženih primerov in deležom okuženih. Ker je veliko asimptomatikov, je pravo število okuženih neznano. Nekateri študiji \cite{asycvd19} trdi trdijo, da je število asimptomatikov med 5\% in 80\% okužencev. Ker je število zaznanih okuženev le vzorec okužencev, lahko izračunamo interval zaupanja te populacije. Vzemimimo delež okuženih v prvi polovici prvega vala (ki smo gadefinirali v analizi 4.1). Računamo:
+\subsubsection{Delež okuženih do vrhunca prvega vala okuženih}
+Spremenljivka D delež okuženih do vrhunca prvega vala okuženih definiramo:
+\[D = \frac{100 * \text{št. okuženih}}{\text{št. prebivalcev}}\]
+kjer število okuženih je stolpec OV v bazi in število prebivalcev je stolpec PREB v bazi. Naprej lahko prikažemo spremenljivko D z histogramom in barplotom.
+\includegraphics[scale=0.6]{histogram_delez_okuzenih}
+\includegraphics[scale=0.6]{barplot_delez_okuzenih}
+Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
+\[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.62339\]
+ P vrednost za test je 
+\[ p-value = 3.925e-07. \]
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost p manjša od \(\alpha\), zavržemo \(H_0\). Ker je \(p < \alpha\) (3.925e-07 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): Spremenljivka D je simetrična in alternativna hipoteza \(H_1\): spremenljivka D je asimterična. Za test spremenljivke S dobimo rezultate:
+\[\text{Test statistike} = 3.9434 \text{ in p-value} =  0.002.\]
+Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Če je p vrednost \(< \alpha\), lahko zavrnemo hipotezo \(H_0\). Ker je p vrednost \(< \alpha\) (0.002 \(<\) 0.05) zavrnemo hipotezo \(H_0\). Spremenčjivka D ni normalno porazdeljena in je asimetrična. Delež okužencev je le vzorec, saj v ta delež niso šteti asimpotomatiki. Zaradi tega lahko izračunamo interval zaupanja za vsak delež okuženih. Računamo:
 \[\Delta = t_{(1 + \beta) /2}(\infty) \times \sqrt{\frac{p(1 - p)}{n}}\]
-
-kjer n je število prebivalcev države, p je delež okuženih, \(\Delta\) je razmik intervala, \(t_{p}(r)\) je vrednost studentove t-porazdelitve s r stopnjami svobode in p procent zaupanja. Izbrana \(\beta\) je 0.99. Ker je število asimptomatikov večje ali enako 0, lahko komaj izračunani interval zožimo na
-\[[\overset{-}{x}, \overset{-}{x} + \Delta ]\text{.}\]
-
-Realno število okužencev v prvi polovici prvega vala se nahaja v tem intervalu s verjetnostjo 99\%.
-Izračunan je interval za vsako evrospko državo. \\
+kjer n je število prebivalcev države, p je delež okuženih, \(\Delta\) je razmik intervala, \(t_{p}(r)\) je vrednost studentove t-porazdelitve s r stopnjami svobode in p procent zaupanja. Izbrana \(\beta\) je 0.95, kar pomeni, da je \(\alpha = \) 0.05. Izračunan interval je prikazan v spodnji tabeli. \\
 \scalebox{1.0}{
-\csvautotabular{dbMargins.csv}
+\csvautotabular{dbIntervalZaupanjaDelezOkuzenih.csv}
 }
-\\
-Iz tabele lahko opažamo, da največji možen delež okuženih oziroma zgornja meja intervala večja od deleža zaznanih okuženih. To pa ne pomeni, da je asimptomatikov veliko več od okuženih, temveč realni delež okuženih pripada intervalu s verjetnostjo 99\%.
 
+\subsubsection{Delež mrtvih do vrhunca prvega vala okuženih}
+Spremenljivka D delež okuženih do vrhunca prvega vala okuženih definiramo:
+\[D = \frac{100 * \text{št. mrtvih}}{\text{št. okuženih}}\]
+kjer število okuženih je stolpec MV v bazi in število prebivalcev je stolpec OV v bazi. Naprej lahko prikažemo spremenljivko D z histogramom in barplotom.
+\includegraphics[scale=0.6]{histogram_fatalnost}
+\includegraphics[scale=0.6]{barplot_fatalnost}
+Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
+\[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.8851\]
+ P vrednost za test je 
+\[ p-value = 0.0062. \]
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost p manjša od \(\alpha\), zavržemo \(H_0\). Ker je \(p < \alpha\) (0.0062 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): Spremenljivka D je simetrična in alternativna hipoteza \(H_1\): spremenljivka D je asimterična. Za test spremenljivke S dobimo rezultate:
+\[\text{Test statistike} = 1.5009 \text{ in p-value} =  0.26.\]
+Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Če je p vrednost \(< \alpha\), lahko zavrnemo hipotezo \(H_0\). Ker je p vrednost \(> \alpha\) (0.26 \(>\) 0.05) ne moremo zavrniti hipotezo \(H_0\). Spremenčjivka D ni normalno porazdeljena in smatramo da je asimetrična, ker je p vrednost zadnejga testa zelo majhen. Kot v prejšnji analizu, delež okužencev je le vzorec, saj v ta delež niso šteti asimpotomatiki. Zaradi tega lahko izračunamo interval zaupanja za vsak delež okuženih. Računamo:
+\[\Delta = t_{(1 + \beta) /2}(\infty) \times \sqrt{\frac{p(1 - p)}{n}}\]
+kjer n je število prebivalcev države, p je delež okuženih, \(\Delta\) je razmik intervala, \(t_{p}(r)\) je vrednost studentove t-porazdelitve s r stopnjami svobode in p procent zaupanja. Izbrana \(\beta\) je 0.95, kar pomeni, da je \(\alpha = \) 0.05. Izračunan interval je prikazan v spodnji tabeli. \\
+\scalebox{1.0}{
+\csvautotabular{dbIntervalZaupanjaFatalnost.csv}
+}
 
-\subsection{Vpliv mediane starosti EU države na delež okuženih}
-Po analizi realnega deleža okuženih je smiselno raziskovati kaj vpliva na širjenje virusa. Razni članki trdijo, da starejše osebe imajo višjo verjetnost do okužbe in višjo verjetnost do smrti zaradi vpliva tudi drugih že znanih bolezni pacienta. Zanima me kako se je širjenje razlikovalo med Evropskimi državami in če je na to vplivala mediana starosti populacije. Najprej definiramo delež okuženih.
+\subsubsection{Delež testov do vrhunca prvega vala okuženih}
+Spremenljivka T delež testov do vrhunca prvega vala okuženih definiramo:
+\[T = \frac{100 * \text{št. opravljenih testov}}{\text{št. prebivalcev}}\]
+kjer število opravljenih je stolpec OTO v bazi in število prebivalcev je stolpec PREB v bazi. Naprej lahko prikažemo spremenljivko T s histogramom in barplotom.
+\includegraphics[scale=0.6]{histogram_delez_testov}
+\includegraphics[scale=0.6]{barplot_delez_testov}
+Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
+\[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.73562\]
+ P vrednost za test je 
+\[ p-value = 1.264e-05. \]
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost p manjša od \(\alpha\), zavržemo \(H_0\). Ker je \(p < \alpha\) (1.264e-05 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): Spremenljivka T je simetrična in alternativna hipoteza \(H_1\): spremenljivka T je asimterična. Za test spremenljivke S dobimo rezultate:
+\[\text{Test statistike} = 2.8186 \text{ in p-value} =  0.018.\]
+Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Če je p vrednost \(< \alpha\), lahko zavrnemo hipotezo \(H_0\). Ker je p vrednost \(< \alpha\) (0.018 \(<\) 0.05) zavrnemo ničelno hipotezo \(H_0\). Spremenčjivka T ni normalno porazdeljena in je asimetrična.
+
+\subsection{Korelacijska analiza}
+Korelacijsko analizo bom razdelil na tri dele in sicer:
+\begin{enumerate}
+\item{Mediana starosti}
+\item{Delež testov starosti}
+\item{Število dni do vrha prvega vala okuženih}
+\end{enumerate}
+
+\subsubsection{Mediana starosti}
+Zanima me kako je mediana starosti vplivala na druge spremenljivke in sicer na število dni do vrhunca prvega vala okuženih, število dni do vrhunca prvega vala mrtvih, delež okuženih do vrhunca prvega vala okuženih, delež mrtvih do vrhunca prvega vala okuženih.
+
+\paragraph{Vpliv mediane starosti na število dni do vrhunca prvega vala okuženih}
+Sprašujemo se kakšna je korelacija med spremenljivko M mediana starosti (stolpec MED v bazi) in spremenljivko Š številom dni do vrhunca prvega vala okuženih. Podatke navedenoh spremenljivk lahkjo prikažemo z razsvenim grafom.
+
+\includegraphics[scale=0.6]{vpliv_med_populacije_na_st_dni_do_peaka_okuezenih}
+Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
-\[\textbf{delež okuženih} = \frac{100 \text{ \(\times\) število okuženih}}{\text{število prebivalcev}}\]
+\[\text{r} = \frac{Cov(M,Š)}{\sigma_{M} \sigma_{Š}} = -0.0258\]
 \end{center} 
-Naj bo spremenljivka S mediana starosti populacije (stolpec MED v bazi). Naj bo spremenljivka D delež okuženih, ki je razmerje med številom okuženih (stolpec OV v bazi) in številom prebivalcev (stolpec PREB v bazi). Izbrani podatki so podatki iz intervala od datuma prvega zaznanega okuženca do datuma vrhunca okuženih v prvem valu (Stolpca DPO in DVO v bazi v poglavju 3). Podatke iz baze prikažemo v grafu. 
-
-\includegraphics[scale=0.6]{Vpliv_mediane_populacije_na_delez_okuzenih_v_prvi_polovici_prvega_vala}
-
-Na prvi pogled trend ne obstaja, kljub temu da smo vzeli primeren vzorec, vse države evropske unije. Graf nam, da slutiti, da sta spremenljivki S in D neodvisni. Z računi lahko ugotovimo več o povezanosti zgornjih spremenljivk. Izračunajmo Pearsonov koeficient korelacije:
+kjer je \(\sigma_{M}\) standardni odklon spremenljivke M in \(\sigma_{Š}\) standardni odklon spremenljivke Š. Koeficient ni dovolj velik, da bi lahko smatrali, da obstaja močna povezanost med spremenljivkima. Pravzaprav ker je tako blizu ničle lahko smatramo, da sta si spremenljivki M in Š neodvisni, a to ni še gotovo. Menda sta si spremenljivke nelinearno povezane. To lahko preverimo s Spearmanovim koeficientom korelacije. Izračunajmoga takole: 
 
 \begin{center}
-\[\text{r} = \frac{Cov(S,D)}{\sigma_{S} \sigma_{D}} = -0.22\]
+\[\rho = 1 - \frac{6\sum_{i}{}d_i^2}{N(N^2 - 1)} = -0.0888\]
 \end{center} 
 
-kjer je \(\sigma_{S}\) standardni odklon spremenljivke S in \(\sigma_{D}\) standardni odklon spremenljivke D. Koeficient je zelo blizu ničli, kar pomeni, da njihova linearna povezanost je zelo majhna. Mogoče pa sta si neliarno povezani. To lahko preverimo s Spearmanovim koeficientom korelacije. Izračunajmoga takole: 
+kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov). Tudi Spearmanov koeficient je zelo majhen, negativen in blizu ničli. Ponovno slutimo, da sta si spremenljivki M in Š neodvisni.
+Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izračunamo interval zaupanja za korelacijski koeficient. V R-ju lahko izračunamo 95\% interval zaupanja z ukazom cor.test(M,Š, method = "pearson").
+\[[r - \Delta, r + \Delta] = [-0.4019, 0.3577]\]
+Da bi bile spremenljivke M in Š v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7. Nobena vrednost v zgornejm intervalu, ne zadošča pogoju zaradi tega lahko smatramo, da sta si spremenljivki M in Š neodvisni.
+
+\paragraph{Vpliv mediane starosti na število dni do vrhunca prvega vala mrtvih}
+Sprašujemo se kakšna je korelacija med spremenljivko M mediana starosti (stolpec MED v bazi) in spremenljivko Š številom dni do vrhunca prvega vala mrtvih. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
+
+\includegraphics[scale=0.6]{vpliv_med_pop_na_st_dni_do_peaka_mrtvih}
+Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
-\[\rho = 1 - \frac{6\sum_{i}{}d_i^2}{N(N^2 - 1)} = -0.3254892\]
+\[\text{r} = \frac{Cov(M,Š)}{\sigma_{M} \sigma_{Š}} = 0.0902\]
+\end{center} 
+kjer je \(\sigma_{M}\) standardni odklon spremenljivke M in \(\sigma_{Š}\) standardni odklon spremenljivke Š. Koeficient ni dovolj velik, da bi lahko smatrali, da obstaja močna povezanost med spremenljivkima. Pravzaprav ker je tako blizu ničle lahko smatramo, da sta si spremenljivki M in Š neodvisni, a to ni še gotovo. Menda sta si spremenljivke nelinearno povezane. To lahko preverimo s Spearmanovim koeficientom korelacije. Izračunajmoga takole: 
+
+\begin{center}
+\[\rho = 1 - \frac{6\sum_{i}{}d_i^2}{N(N^2 - 1)} = -0.052\]
 \end{center} 
 
-kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov).
-Kot Pearsonov koeficient tudi Spearmanov koeficient je zelo blizu ničli. Trdimo lahko, da spremenljivki S in F si nista močno povezani. To seveda še ne pomeni, da sta spremenljivki neodvisni. Izvedemo lahko f-test. Najprej nastavimo ničelno hipotezo \( H_0 \):
+kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov). Tudi Spearmanov koeficient je zelo majhen, negativen in blizu ničli. Ponovno slutimo, da sta si spremenljivki M in Š neodvisni.
+Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izračunamo interval zaupanja za korelacijski koeficient. V R-ju lahko izračunamo 95\% interval zaupanja z ukazom cor.test(M,Š, method = "pearson").
+\[[r - \Delta, r + \Delta] = [-0.3001382, 0.4545977]\]
+Da bi bile spremenljivke M in Š v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7. Nobena vrednost v zgornejm intervalu, ne zadošča pogoju zaradi tega lahko smatramo, da sta si spremenljivki M in Š neodvisni.
+
+\paragraph{Vpliv mediane starosti na delež okuženih do vrhunca prvega vala okuženih}
+Sprašujemo se kakšna je korelacija med spremenljivko M mediana starosti (stolpec MED v bazi) in spremenljivko D delež okuženih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
+\[D = \frac{100 * \text{št. okuženih}}{\text{št. prebivalcev}}\]
+kjer število okuženih je stolpec OV v bazi in število prebivalcev je stolpec PREB v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
+
+\includegraphics[scale=0.6]{vpliv_med_pop_na_delez_okuzencev}
+Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
 
 \begin{center}
-\( H_0 \): Spremenljivki S (mediana starosti populacije) in D (delež okuženih) sta si neodvisni
+\[\text{r} = \frac{Cov(M,D)}{\sigma_{M} \sigma_{D}} = -0.2203\]
+\end{center} 
+kjer je \(\sigma_{M}\) standardni odklon spremenljivke M in \(\sigma_{D}\) standardni odklon spremenljivke D. Koeficient ni dovolj velik, da bi lahko smatrali, da obstaja močna povezanost med spremenljivkima. Pravzaprav ker je tako blizu ničle lahko smatramo, da sta si spremenljivki M in Š neodvisni, a to ni še gotovo. Menda sta si spremenljivke nelinearno povezane. To lahko preverimo s Spearmanovim koeficientom korelacije. Izračunajmoga takole: 
+
+\begin{center}
+\[\rho = 1 - \frac{6\sum_{i}{}d_i^2}{N(N^2 - 1)} = -0.3255\]
+\end{center} 
+
+kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov). Tudi Spearmanov koeficient je zelo majhen, negativen in blizu ničli. Ponovno slutimo, da sta si spremenljivki M in D neodvisni.
+Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izračunamo interval zaupanja za korelacijski koeficient. V R-ju lahko izračunamo 95\% interval zaupanja z ukazom cor.test(M,Š, method = "pearson").
+\[[r - \Delta, r + \Delta] = [-0.5539, 0.1743]\]
+Da bi bile spremenljivke M in D v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7. Nobena vrednost v zgornejm intervalu, ne zadošča pogoju zaradi tega lahko smatramo, da sta si spremenljivki M in D neodvisni.
+
+\paragraph{Vpliv mediane starosti na delež mrtvih do vrhunca prvega vala okuženih}
+Sprašujemo se kakšna je korelacija med spremenljivko M mediana starosti (stolpec MED v bazi) in spremenljivko D delež mrtvih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
+\[D = \frac{100 * \text{št. mrtvih}}{\text{št. okuženih}}\]
+kjer število okuženih je stolpec MV v bazi in število prebivalcev je stolpec OV v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
+
+\includegraphics[scale=0.6]{vpliv_med_pop_na_fatalnost}
+Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
+
+\begin{center}
+\[\text{r} = \frac{Cov(M,D)}{\sigma_{M} \sigma_{D}} = -0.0845\]
+\end{center} 
+kjer je \(\sigma_{M}\) standardni odklon spremenljivke M in \(\sigma_{D}\) standardni odklon spremenljivke D. Koeficient ni dovolj velik, da bi lahko smatrali, da obstaja močna povezanost med spremenljivkima. Pravzaprav ker je tako blizu ničle lahko smatramo, da sta si spremenljivki M in D neodvisni, a to ni še gotovo. Menda sta si spremenljivke nelinearno povezane. To lahko preverimo s Spearmanovim koeficientom korelacije. Izračunajmoga takole: 
+
+\begin{center}
+\[\rho = 1 - \frac{6\sum_{i}{}d_i^2}{N(N^2 - 1)} = -0.1951\]
+\end{center} 
+
+kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov). Tudi Spearmanov koeficient je zelo majhen, negativen in blizu ničli. Ponovno slutimo, da sta si spremenljivki M in D neodvisni.
+Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izračunamo interval zaupanja za korelacijski koeficient. V R-ju lahko izračunamo 95\% interval zaupanja z ukazom cor.test(M,Š, method = "pearson").
+\[[r - \Delta, r + \Delta] = [-0.45, 0.3053]\]
+Da bi bile spremenljivke M in D v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7. Nobena vrednost v zgornejm intervalu, ne zadošča pogoju zaradi tega lahko smatramo, da sta si spremenljivki M in D neodvisni.
+
+\subsubsection{Delež testov}
+
+Zanima me kako je delež testov vpliva na druge spremenljivke in sicer na delež okuženih do vrhunca prvega vala okuženi in na delež mrtvih do vrhunca prvega vala okuženih. Definirajmo spremenljivko T delež testov:
+\[T = \frac{100 * \text{št. opravljenih testov}}{\text{št. prebivalcev}}\]
+kjer število opravljenih je stolpec OTO v bazi in število prebivalcev je stolpec PREB v bazi.
+
+\paragraph{Vpliv delež testov na delež okuženih do vrhunca prvega vala okuženih}
+Sprašujemo se kakšna je korelacija med spremenljivko T in spremenljivko D delež mrtvih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
+\[D = \frac{100 * \text{št. okuženih}}{\text{št. prebivalcev}}\]
+kjer število okuženih je stolpec OV v bazi in število prebivalcev je stolpec PREB v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
+
+\includegraphics[scale=0.6]{vpliv_deleza_testov_na_delez_okuzenih}
+Iz grafa lahko zaznamo nek trend med spremenljivkama. Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
+
+\begin{center}
+\[\text{r} = \frac{Cov(M,D)}{\sigma_{M} \sigma_{D}} = 0.7131\]
+\end{center} 
+kjer je \(\sigma_{M}\) standardni odklon spremenljivke M in \(\sigma_{D}\) standardni odklon spremenljivke D. Koeficient je dovolj velik, da bi lahko smatrali, da obstaja močna povezanost med spremenljivkima. lahko trdimo, da spremenljivki sta si odvisni.
+Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izračunamo interval zaupanja za korelacijski koeficient. V R-ju lahko izračunamo 95\% interval zaupanja z ukazom cor.test(M,Š, method = "pearson").
+\[[r - \Delta, r + \Delta] = [0.4568, 0.86]\]
+Da bi bile spremenljivke M in D v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7.
+
+\paragraph{Vpliv delež testov na delež mrtvih do vrhunca prvega vala okuženih}
+Sprašujemo se kakšna je korelacija med spremenljivko M mediana starosti (stolpec MED v bazi) in spremenljivko D delež mrtvih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
+\[D = \frac{100 * \text{št. mrtvih}}{\text{št. okuženih}}\]
+kjer število mrtvih je stolpec MV v bazi in število okuženih je stolpec OV v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
+
+\includegraphics[scale=0.6]{vpliv_delez_testov_na_delez_mrtvih}
+Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
+
+\begin{center}
+\[\text{r} = \frac{Cov(T,D)}{\sigma_{T} \sigma_{D}} = 0.1596\]
+\end{center} 
+kjer je \(\sigma_{T}\) standardni odklon spremenljivke T in \(\sigma_{D}\) standardni odklon spremenljivke D. Koeficient ni dovolj velik, da bi lahko smatrali, da obstaja močna povezanost med spremenljivkima. Pravzaprav ker je tako blizu ničle lahko smatramo, da sta si spremenljivki T in D neodvisni, a to ni še gotovo. Menda sta si spremenljivke nelinearno povezane. To lahko preverimo s Spearmanovim koeficientom korelacije. Izračunajmoga takole: 
+
+\begin{center}
+\[\rho = 1 - \frac{6\sum_{i}{}d_i^2}{N(N^2 - 1)} = 0.1246\]
+\end{center} 
+
+kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov). Tudi Spearmanov koeficient je zelo majhen, negativen in blizu ničli. Ponovno slutimo, da sta si spremenljivki T in D neodvisni.
+Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izračunamo interval zaupanja za korelacijski koeficient. V R-ju lahko izračunamo 95\% interval zaupanja z ukazom cor.test(T,D, method = "pearson").
+\[[r - \Delta, r + \Delta] = [-0.45, 0.3053]\]
+Da bi bile spremenljivke T in D v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7. Nobena vrednost v zgornejm intervalu, ne zadošča pogoju zaradi tega lahko smatramo, da sta si spremenljivki T in D neodvisni.
+
+
+\subsubsection{Število dni do vrha prvega vala okuženih}
+
+Zanima me kako je število dni do vrha prvega vala okuženih vpliva na druge spremenljivke in sicer na delež okuženih do vrhunca prvega vala okuženi in na delež mrtvih do vrhunca prvega vala okuženih. Spremenljivka Š število dni do vrhunca prvega vala okuženih starosti je razlika v dnevih
+stolpcev DVO in DPO v bazi.
+
+\paragraph{Vpliv število dni do vrha prvega vala okuženih na delež okuženih do vrhunca prvega vala okuženih}
+Sprašujemo se kakšna je korelacija med spremenljivko Š in spremenljivko D delež mrtvih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
+\[D = \frac{100 * \text{št. okuženih}}{\text{št. prebivalcev}}\]
+kjer število okuženih je stolpec OV v bazi in število prebivalcev je stolpec PREB v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
+
+\includegraphics[scale=0.6]{vpliv_st_dni_do_peaka_mrtvih_na_delez_okuzencev}
+Iz grafa lahko zaznamo nek trend med spremenljivkama. Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
+
+\begin{center}
+\[\text{r} = \frac{Cov(Š,D)}{\sigma_{Š} \sigma_{D}} = 0.67554\]
+\end{center} 
+kjer je \(\sigma_{Š}\) standardni odklon spremenljivke Š in \(\sigma_{D}\) standardni odklon spremenljivke D. Koeficient ni dovolj velik, ker je manjši od 0.7, da bi lahko smatrali, da obstaja močna povezanost med spremenljivkima. Ne moremo trditi, da spremenljivki sta si odvisni. Menda sta si spremenljivke nelinearno povezane. To lahko preverimo s Spearmanovim koeficientom korelacije. Izračunajmoga takole: 
+
+\begin{center}
+\[\rho = 1 - \frac{6\sum_{i}{}d_i^2}{N(N^2 - 1)} = 0.4573\]
 \end{center}
-Računamo \( R^2 \) (Coefficient of determination) in F:
-\[R^2 = 1 - \frac{\sum_{i}{}(y_i - \overset{..}{y_i})}{\sum_{i}{}(y_i - \overset{-}{y_i})} = 0.04852426\]
-kjer so \(y_i\) podatki, ki jih imamo na razpolago, \(\overset{..}{y_i}\) pa vrednosti, ki bi jih imela odvisna spremenljivka D (delež okuženih) v primeru, da bi njene vrednosti ležale natanko na regresijski premici, ki smo jo dobili z metodo najmanjših kvadratov.
 
-\[F = \frac{R^2}{(p - 1)(1 - R^2)(n - p)} = 0.00204 \]
+kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov). Tudi Spearmanov koeficient je manjši od 0.7. Ponovno slutimo, da sta si spremenljivki Š in D neodvisni.
+Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izračunamo interval zaupanja za korelacijski koeficient. V R-ju lahko izračunamo 95\% interval zaupanja z ukazom cor.test(M,Š, method = "pearson").
+\[[r - \Delta, r + \Delta] = [0.3976, 0.8399]\]
+Da bi bile spremenljivke Š in D v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7. Del zgornjega intervala je večji od 0.7. Če bi korelacijski koeficient populacije večji od 0.7 bi lahko z gotovstjo trdili, da obstaja močna povezanost med spremenljivkima Š in D.
 
-kjer p je število spremenljivk, \( R^2 \) je Koeficient odločnosti in n je število držav evropske unije. Ničelno hipotezo \( H_0 \) lahko zavrnemo, če F \ge \(F_t \). \(F_t\) je vrednost, ki prebermo iz porazdelitvene tabele distribucije F. Izberemo \(\alpha\) (significance level) = 0.05. Iz tabele lahko razberemo, da je \( F_t \) = 4.2417 (Gledamo stolpec p - 1 = 1 in vrstico n - 2 = 25 ). Velja da, F \lt \(F_t\), torej ne moremo zavreči ničelne hipoteze \(H_0\). Ker je vrednost F veliko manjša od vrednosti \(F_t\), si lahko predstavljamo, da sta si spremenljivki S in F neodvisni.
+\paragraph{Vpliv delež testov na delež mrtvih do vrhunca prvega vala okuženih}
+Sprašujemo se kakšna je korelacija med spremenljivko T in spremenljivko D delež mrtvih do vrhunca prvega vala okuženih. Najprej definirajmo spremenljivko D:
+\[D = \frac{100 * \text{št. mrtvih}}{\text{št. okuženih}}\]
+kjer število mrtvih je stolpec MV v bazi in število okuženih je stolpec OV v bazi. Podatke navedenih spremenljivk lahko prikažemo z razsvenim grafom.
 
-\subsection{Vpliv mediane starosti EU države na fatalnost virusa Covid-19}
-Analiza 4.3 je privleka do zanimivih rezultatov. Sprašujem se, če enako velja za fatalnost virusa. Opravil bom podobno analizo kot v poglavju 4.3. Je fatalnost virusa pod vplivom mediane starosti populacije? Najprej definiramo fatalnost.
+\includegraphics[scale=0.6]{vpliv_stevila_dni_do_peaka_okuzencev_na_fatalnost}
+Koeficient korelacije lahko izračunamo s Pearsonovim koeficientom korelacije:
+
 \begin{center}
-\[\textbf{fatalnost} = \frac{100 \text{ \(\times\) število mrtvih}}{\text{število okuženih}}\]
+\[\text{r} = \frac{Cov(Š,D)}{\sigma_{Š} \sigma_{D}} = 0.5856\]
 \end{center} 
-Naj bo fatalnost prve polovice prvega vala razmerje med številom mrtvih prve polovice prvega vala (stolpec MV v bazi) in številom okuženih prve polovice prvega vala (stolpec OV bazi). Za analizo vzamemo spremenljivki F in S, kjer F predstavlja fatalnost in S mediano starosti države. Spremenljivki F in S vsake države evropske unije sta prikazani v spodnjem grafu.
-\includegraphics[scale=0.6]{Vpliv_mediane_populacije_na_fatalnost_Covid-19_v_prvi_polovici_vala}
-
-Gledano navidezno tudi v spodnejm grafu ni nobenega trenda. Na prvi vtis sta si spremenljivki neodvisni. To lahko potrdim s sledečimi računi. Izračunamo Pearsonov koeficient korelacije, ki nam pove linearno povezanost spremeljivk S in F:
+kjer je \(\sigma_{Š}\) standardni odklon spremenljivke Š in \(\sigma_{D}\) standardni odklon spremenljivke D. Koeficient ni dovolj velik, da bi lahko smatrali, da obstaja močna povezanost med spremenljivkima. Pravzaprav ker je tako blizu ničle lahko smatramo, da sta si spremenljivki T in D neodvisni, a to ni še gotovo. Menda sta si spremenljivke nelinearno povezane. To lahko preverimo s Spearmanovim koeficientom korelacije. Izračunajmoga takole: 
 
 \begin{center}
-\[\text{r} = \frac{Cov(S,F)}{\sigma_{S} \sigma_{F}} = 0.22\]
+\[\rho = 1 - \frac{6\sum_{i}{}d_i^2}{N(N^2 - 1)} = 0.6868\]
 \end{center} 
-kjer je \(\sigma_{S}\) standardni odklon spremenljivke S in \(\sigma_{F}\) standardni odklon spremenljivke F. Koeficient je zelo majhen, kar pomeni, da njihova linearna povezanost je zelo majhna. Kot v prejšnji analizi, bomo izračunali neliarno povezanost. To lahko preverimo s Spearmanovim koeficientom korelacije. Izračunajmoga: 
 
-\begin{center}
-\[\rho = 1 - \frac{6\sum_{i}{}d_i^2}{N(N^2 - 1)} = 0.27\]
-\end{center} 
-kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov).
-Spearmanov koeficient je zelo majhen. Trdimo lahko, da spremenljivki S in F si nista močno povezani. To seveda še ne pomeni, da sta spremenljivki neodvisni.  Kot v prejšnji analizi, bomo izvedli f-test. Najprej nastavimo ničelno hipotezo \( H_0 \):
-\begin{center}
-\( H_0 \): Spremenljivki S (mediana starosti populacije) in F (fatalnost virusa) sta si neodvisni
-\end{center}
-Računamo \( R^2 \) (Coefficient of determination) in F:
-\[R^2 = 1 - \frac{\sum_{i}{}(y_i - \overset{..}{y_i})}{\sum_{i}{}(y_i - \overset{-}{y_i})} = 0.049\]
-kjer so \(y_i\) podatki, ki jih imamo na razpolago, \(\overset{..}{y_i}\) pa vrednosti, ki bi jih imela odvisna spremenljivka F (fatalnost virusa) v primeru, da bi njene vrednosti ležale natanko na regresijski premici.
-
-\[F = \frac{R^2}{(p - 1)(1 - R^2)(n - p)} = 0.002055029 \]
-
-kjer p je število spremenljivk, \( R^2 \) je Koeficient odločnosti in n je število držav evropske unije. Velja podobno kot v analizi 4.1. Ničelno hipotezo \( H_0 \) lahko zavrnemo, če F \ge \(F_t \). \(F_t\) je vrednost, ki prebermo iz porazdelitvene tabele distribucije F. Izberemo \(\alpha\) (significance level) = 0.05. Iz tabele lahko razberemo, da je \( F_t \) = 4.2417 (Gledamo stolpec p - 1 = 1 in vrstico n - 2 = 25 ). Velja da, F \lt \(F_t\), torej ne moremo zavreči ničelne hipoteze \(H_0\). Ker je vrednost F veliko manjša od vrednosti \(F_t\), si lahko predstavljamo, da sta si spremenljivki S in F neodvisni.
+kjer je \( d_i \) razlika med rangoma za i-to enoto in N pa število vseh enot (parov rangov). Tudi Spearmanov koeficient je zelo majhen, negativen in blizu ničli. Ponovno slutimo, da sta si spremenljivki T in D neodvisni.
+Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izračunamo interval zaupanja za korelacijski koeficient. V R-ju lahko izračunamo 95\% interval zaupanja z ukazom cor.test(T,D, method = "pearson").
+\[[r - \Delta, r + \Delta] = [0.2644, 0.7898]\]
+Da bi bile spremenljivke Š in D v korelaciji, bi moral biti koeficient korelacije večji od 0.7 ali manjši od -0.7. Le majhen del zgornjega intervala zadošča pogoju zaradi tega lahko smatramo, da sta si spremenljivki Š in D nekorelirani.
 
 \section{Zaključki}
 
-Iz analiz lahko trdimo, da število dni od prvega zaznanega okužena je skoraj linearno povezan z število okuženih od datuma prvega zaznanega okuženca do vrha zaznanih okužencev. Iz tega lahko smatramo, da države ki so imele daljšo prvo polovico prvega vala so imele višji delež okuženih. Skratka tudi podatek o številu okuženih ni realen, saj tako število ne šteje asimptomatikov, ki bi lahko predstavljajo nek del okužencev. Realni delež okuženih je lahko večji od zaznanega deleža okuženih. Ta informacija predstavlja velik problem za vsako državo, saj ne mora vkrepati pravočasno, če ne pozna realnih podatkov. 
-Širjenje virusa je pomembna tema seminarske. Zanimalo nas je, če sta širjenje in fatalnost pod vplivom mediane starosti populacije. Na to vprašanje ne morem odgovorit, da obstaja tesna povezanost med mediano starosti populacije in ostlimi spremenljivkami. Iz računov lahko slutimo, da sta si spremenljivki neodvisniv obe analizah. To pa seveda še ne pomeni, da sta si neodvisne v analizah 4.3 in 4.4, saj niso številke realne. Vzroki za nerelanosti podatkov so manjkanje podatka števila asimptomatikov, regulacije države, koliko država testira ipd. Pri fatalnosti še dodatna težava je dejstvo, da če bolnik ima še dodatne bolezni in umre, ker je bil okužen od virusa, bo ta bil štet med smrti Covid-19 ali ne. V določenih primerih nemorejo vedet, če je bolnik umrl zaradi virusa ali zaradi ostalih že znanih boleznih pacienta. To odloča država.
 
 \section{Literatura}
 
@@ -349,6 +548,14 @@ COVID-19: What proportion are asymptomatic? - Carl Heneghan, Jon Brassey, Tom Je
 \bibitem{cvd19Wiki} 
 Covid-19 - Wikipedia
 \\\texttt{https://en.wikipedia.org/wiki/Coronavirus\_disease\_2019}
+
+\bibitem{swtestWiki} 
+Shapiro-Wilk test - Wikipedia
+\\\texttt{https://en.wikipedia.org/wiki/Shapiro\%E2\%80\%93Wilk\_test}
+
+\bibitem{lawstat} 
+Lawstat R package - Vyacheslav Lyubchich
+\\\texttt{https://www.rdocumentation.org/packages/lawstat/versions/3.4}
 
 
 
