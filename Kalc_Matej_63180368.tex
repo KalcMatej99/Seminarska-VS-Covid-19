@@ -154,20 +154,20 @@ Sweden,8.466\%,8.922\%
 \emph{“Koronavirus je hujši kot vojna, kjer je sovražnik še vedno človek, s katerim se še
 vedno lahko ukvarjamo, medtem ko je kakršenkoli dogovor s smrtonosnim virusom,
 ki ogroža naše preživetje, nemogoč. (...)".} \cite{zucc}\\ \\
-Tako je izjavil G. Zuccarini. Lahko bi izjavili, da je Koronavirus tretja svetovna vojna, kjer se neviden sovražnik skriva med ljudmi. Ogroža ljudem življenje, nekaterim pa ga tudi odvzame. Ljudje lahko premagamo nevidnega sovražnika, le če primerno in provočasno ukrepamo s pravim orožjem, kot so samozavest in ukrep človeka. V taki bitki tudi študiji in analize podatkov so dobro orožje proti virusu, saj nam povejo nekaj novega o našem sovražniku. Mogoče eden izmed teh nam bo dal možnost odkritja cepiva proti virusu, toda dokler tega ne najdemo ostaja edina možnost uporaba mask, razkužil in distanca. Zanima me kako so se ljudje odzvali na epidemijo in katere države so bile najboljše in katere najslabše organizirane za preprečevanje okužbe. Ker je epidemija še v teku, bom kot vzorec izbral države Evropske Unije, ker se je v teh epidemija sprožila približno sočasno. 
+Tako je izjavil G. Zuccarini. Lahko bi izjavili, da je Koronavirus tretja svetovna vojna, kjer se neviden sovražnik skriva med ljudmi. Ogroža ljudem življenje, nekaterim pa ga tudi odvzame. Ljudje lahko premagamo nevidnega sovražnika, le če primerno in provočasno ukrepamo s pravim orožjem, kot so samozavest in ukrep človeka. V taki bitki tudi študiji in analize podatkov so dobro orožje proti virusu, saj nam povejo nekaj novega o našem sovražniku. Mogoče eden izmed teh nam bo dal možnost odkritja cepiva proti virusu, toda dokler tega ne najdemo ostaja edina možnost uporaba mask, razkužil in distanca. Zanima me kako so se ljudje odzvali na epidemijo in katere države so bile najboljše in katere najslabše organizirane za preprečevanje okužbe. Ker je epidemija še v teku, bom kot vzorec izbral države Evropske unije, ker se je v teh epidemija sprožila približno sočasno. 
 
 
 \subsection{Cilji}
-Trdimo lahko, da so vse države v Evropski uniji \cite{eu} preživele prvi val Koronavirusa pred 19.julijem 2020. V seminarski bom analiziral kako se je virus širil po državah evropske unije. Predvsem bom analiziral interval od začetka širjenja do vrhunca prvega vala v vsaki državi, ker je ta interval najzanimivejši, saj se države prvič soočajo s takim virusom. \\
-Cilj študija je analiza:
+Trdimo lahko, da so vse države v Evropski uniji \cite{eu} preživele prvi val Koronavirusa pred 19. julijem 2020. V seminarski nalogi bom analiziral kako se je virus širil po državah Evropske unije. Analiziral bom predvsem interval od začetka širjenja do vrhunca prvega vala v vsaki državi, ker je ta interval najzanimivejši, saj se države prvič soočajo s takim virusom. \\
+Cilji študija sta:
 \begin{itemize}
 \item{Analiza spremenljivk in}
 \item{Korelacijska analiza.}
 \end{itemize}
-Testiral bom korelacijo med spremenljivkami in izračunal intervale zaupanja, saj podatki niso realni, ker v teh niso vsebovani asimptomatiki.
+Testiral bom korelacijo med spremenljivkami in izračunal intervale zaupanja, saj podatki niso realni, ker v teh niso upoštevani asimptomatiki.
 
 \subsection{Raziskave o virusu}
-Veliko je spletnih strani, ki analizirajo in grafično prikazujejo podatke Covid-a-19. Omenil bom tisto, ki me je motivirala za izdelavo seminarske. \\
+Veliko je spletnih strani, ki analizirajo in grafično prikazujejo podatke Covid-a-19. Omenil bom tisto, ki me je motiviralo za izdelavo seminarske naloge. \\
 Inštitut za zdravstvene meritve in vrednotenje IHME nudi spletno stran o Koronavirus \cite{cvd19IHME}, kjer so grafično prikazani podatki o okuženih, mrtvih, analizah, socialni distanci ipd, ampak najzanimivejše so projekcije v času, ki stran nudi. IHME-ove projekcije COVID-19 so bile razvite kot odziv na zahteve medicinske univerze v Washingtonu in drugih ameriških bolnišničnih sistemov. Napovedi kažejo povpraševanje po storitvah v bolnišnicah, dnevne in kumulativne smrti zaradi COVID-a-19, stopnje okužbe in analizah ter vpliv socialnega distanciranja, ki ga zahteva država.
 
 \subsection{Poglavja}
@@ -249,14 +249,14 @@ Spremenljivka M mediana starosti je stolpec MED v bazi. Naprej lahko prikažemo 
    \end{minipage}
 \end{figure}
 
-Iz histograma lahko sumimo, da je spremenljivka normalna ali simetrična. To lahko preverimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Izračunajmoga takole:
+Iz histograma lahko sumimo, da je spremenljivka normalna ali simetrična. To lahko preverimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Izračunajmo ga takole:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.94 \text{ in p} = 0.1218.\]
 kjer \(x_{(i)}\) je najmanjša vrednost v vzorcu, \(\overset{\_}{x}\) je povprečje median, \(a_i\) je i-ti element vektorja 0   
 \[(a_1,...,a_n) = \frac{m^T V^{-1}}{C}\]
 kjer \( C = \left\| V^{-1}m \right\|\) in vektor \(m = (m_1,...,m_n)^T\) je sestavljen iz pričakovanih vrednosti statističnih podatkov o vrstnem redu neodvisnih in identično razporejenih naključnih spremenljivk, vzorčenih iz standardne normalne porazdelitve.
-Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost p manjša od \(\alpha\), zavržemo \(H_0\). Ker je \(p > \alpha\) (0.1218 \(>\) 0.05), ne moremo zavreči ničelne hipoteze. Iz računa lahko slutimo, da spremenljivka ni normalno porazdeljena. Testiramo lahko, če je spremenljivka M simetrična. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. V R-ju je to ukaz symmetry.test(X, option = "MGG")\cite{lawstat}, kjer X je poljuben vektor. Naj bo ničelna hipoteza \(H_0\): spremenljivka M je simetrična in alternativna hipoteza \(H_1\): spremenljivka M je asimterična. Za test spremenljivke S dobimo rezultate:
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost p manjša od \(\alpha\), zavržemo \(H_0\). Ker je \(p > \alpha\) (0.1218 \(>\) 0.05), ne moremo zavreči ničelne hipoteze. Iz računa lahko slutimo, da spremenljivka ni normalno porazdeljena. Testiramo lahko, če je spremenljivka M simetrična. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. V R-ju je to ukaz symmetry.test(X, option = "MGG")\cite{lawstat}, kjer X je poljuben vektor. Naj bo ničelna hipoteza \(H_0\): spremenljivka M je simetrična in alternativna hipoteza \(H_1\): spremenljivka M je asimetrična. Za test spremenljivke S dobimo rezultate:
 \[\text{Test statistike} = -0.42212 \text{ in p} = 0.684.\]
-Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Ker je p vrednost \(> \alpha\) (0.684 \(>\) 0.05) ne moremo zavrnit hipoteze \(H_0\). Zaradi velikega koeficienta p lahko smatramo, da je spremenljivka simetrična.
+Tudi tukaj izberemo verjetnost 95\%, tako je \(\alpha\) = 0.05. Ker je p vrednost \(> \alpha\) (0.684 \(>\) 0.05) ne moremo zavrnit hipoteze \(H_0\). Zaradi velikega koeficienta p lahko smatramo, da je spremenljivka simetrična.
 
 \subsubsection{Število dni do vrhunca prvega vala okuženih}
 Spremenljivka S število dni do vrhunca prvega vala okuženih starosti je razlika v dnevih stolpcev DVO in DPO v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom.
@@ -274,11 +274,11 @@ Spremenljivka S število dni do vrhunca prvega vala okuženih starosti je razlik
    \end{minipage}
 \end{figure}
 
-Iz histograma ne moremo sumiti, da je spremenljivka normalna ali simetrična. Kot v prejšnji analizi lahko opravimo Shapiro–Wilk test. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
+Iz histograma ne moremo sumiti, da je spremenljivka normalna ali simetrična. Kot v prejšnji analizi lahko opravimo Shapiro–Wilk test. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane starosti. Izračunajmo ga takole:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.85 \text{ in p} = 0.00126. \]
-Izberemo 95\% interval zaupanja, kar pomeni, da \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost p manjša od \(\alpha\), zavržemo \(H_0\). Ker je \(p < \alpha\) (0.00126 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): Spremenljivka S je simetrična in alternativna hipoteza \(H_1\): spremenljivka S je asimterična. Za test spremenljivke S dobimo rezultate:
+Izberemo 95\% interval zaupanja, kar pomeni, da \(\alpha\) je 0.05 (1 - 95\%). Če je vrednost p manjša od \(\alpha\), zavržemo \(H_0\). Ker je \(p < \alpha\) (0.00126 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): Spremenljivka S je simetrična in alternativna hipoteza \(H_1\): spremenljivka S je asimetrična. Za test spremenljivke S dobimo rezultate:
 \[\text{Test statistike} = 2.3151 \text{ in p-value} = 0.052.\]
-Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Ker je p vrednost \(> \alpha\) (0.052 \(>\) 0.05) ne moremo zavrnit hipoteze \(H_0\), toda lahko sumimo, da je spremenljivka simetrična, p vrednost zelo majhna.
+Tudi tukaj izberemo verjetnost 95\%, tako je \(\alpha\) = 0.05. Ker je p vrednost \(> \alpha\) (0.052 \(>\) 0.05) ne moremo zavrnit hipoteze \(H_0\), toda lahko sumimo, da je spremenljivka simetrična, p vrednost zelo majhna.
 
 \subsubsection{Število dni do vrhunca prvega vala mrtvih}
 Spremenljivka S število dni do vrhunca prvega vala mrtvih je razlika v dnevih stolpcev DVS in DPS v bazi. Naprej lahko prikažemo spremenljivko z histogramom in barplotom.
@@ -295,11 +295,11 @@ Spremenljivka S število dni do vrhunca prvega vala mrtvih je razlika v dnevih s
    \end{minipage}
 \end{figure}
 
-Iz histograma ne moremo sumiti, da je spremenljivka normalna ali simetrična. To lahko preverimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti.
+Iz histograma ne moremo sumiti, da je spremenljivka normalna ali simetrična. To lahko preverimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane starosti.
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.86235 \text{ in p} = 0.00204. \]
-Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Ker je \(p < \alpha\) (0.00204 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena. Menda je simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka S je simetrična in alternativna hipoteza \(H_1\): spremenljivka S je asimterična. Za test spremenljivke S dobimo rezultate:
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Ker je \(p < \alpha\) (0.00204 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena. Menda je simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka S je simetrična in alternativna hipoteza \(H_1\): spremenljivka S je asimetrična. Za test spremenljivke S dobimo rezultate:
 \[\text{Test statistike} = 0.63107 \text{ in p} =  0.59.\]
-Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Ker je p vrednost \(> \alpha\) (0.59 \(>\) 0.05) ne moremo zavrnit hipoteze \(H_0\).
+Tudi tukaj izberemo verjetnost 95\%, tako je \(\alpha\) = 0.05. Ker je p vrednost \(> \alpha\) (0.59 \(>\) 0.05) ne moremo zavrnit hipoteze \(H_0\).
 
 \subsubsection{Delež okuženih do vrhunca prvega vala okuženih}
 Naprej lahko prikažemo spremenljivko D delež okuženih do vrhunca prvega vala okuženih (definirano v 3. poglavju) z histogramom in barplotom.
@@ -316,11 +316,11 @@ Naprej lahko prikažemo spremenljivko D delež okuženih do vrhunca prvega vala 
      \caption{Barplot}\label{Fig:Data2}
    \end{minipage}
 \end{figure}
-Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka D je normalna in alternativna hipoteza \(H_1\): spremenljivka D ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane straosti. Izračunajmoga takole:
+Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka D je normalna in alternativna hipoteza \(H_1\): spremenljivka D ni normalna. Enak račun je narejen v paragrafu analize spremenljivke mediane starosti. Izračunajmo ga takole:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.62339 \text{ in p} = 3.925e-07. \]
-Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Ker je \(p < \alpha\) (3.925e-07 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Naj bo ničelna hipoteza \(H_0\): spremenljivka D je simetrična in alternativna hipoteza \(H_1\): spremenljivka D je asimterična. Za test spremenljivke S dobimo rezultate:
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Ker je \(p < \alpha\) (3.925e-07 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Naj bo ničelna hipoteza \(H_0\): spremenljivka D je simetrična in alternativna hipoteza \(H_1\): spremenljivka D je asimetrična. Za test spremenljivke S dobimo rezultate:
 \[\text{Test statistike} = 3.9434 \text{ in p} =  0.002.\]
-Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Ker je p vrednost \(< \alpha\) (0.002 \(<\) 0.05) zavrnemo hipotezo \(H_0\). Spremenčjivka D ni normalno porazdeljena in je asimetrična. Delež okužencev je le vzorec, saj v ta delež niso šteti asimpotomatiki. Zaradi tega lahko izračunamo interval zaupanja za vsak delež okuženih. Računamo:
+Tudi tukaj izberemo verjetnost 95\%, tako je \(\alpha\) = 0.05. Ker je p vrednost \(< \alpha\) (0.002 \(<\) 0.05) zavrnemo hipotezo \(H_0\). Spremenljivka D ni normalno porazdeljena in je asimetrična. Delež okužencev je le vzorec, saj v ta delež niso šteti asimptomatiki. Zaradi tega lahko izračunamo interval zaupanja za vsak delež okuženih. Računamo:
 \[\Delta = t_{(1 + \beta) /2}(\infty) \times \sqrt{\frac{p(1 - p)}{n}}\]
 kjer n je število prebivalcev države, p je delež okuženih, \(\Delta\) je razmik intervala, \(t_{p}(r)\) je vrednost studentove t-porazdelitve s r stopnjami svobode in p procent zaupanja. Izbrana \(\beta\) je 0.95, kar pomeni, da je \(\alpha = \) 0.05. Državi v i-ti vrstici pripada interval zaupanja \([D_i - \Delta, D_i + \Delta]\), kjer \(D_i\) je delež okuženih za i-to državo. Izračunani intervali so prikazani v spodnji tabeli.
 \begin{center}
@@ -342,11 +342,11 @@ Spremenljivko F fatalnost (definirano v 3. pogalvju) prikažemo grafično.
      \caption{Barplot}\label{Fig:Data2}
    \end{minipage}
 \end{figure}
-Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka F je normalna in alternativna hipoteza \(H_1\): spremenljivka F ni normalna. Izračunajmoga takole:
+Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka F je normalna in alternativna hipoteza \(H_1\): spremenljivka F ni normalna. Izračunajmo ga takole:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.8851 \text{ in p} = 0.0062. \]
-Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Ker je \(p < \alpha\) (0.0062 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka F je simetrična in alternativna hipoteza \(H_1\): spremenljivka F je asimterična. Za test spremenljivke S dobimo rezultate:
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Ker je \(p < \alpha\) (0.0062 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka F je simetrična in alternativna hipoteza \(H_1\): spremenljivka F je asimetrična. Za test spremenljivke S dobimo rezultate:
 \[\text{Test statistike} = 1.5009 \text{ in p} =  0.26.\]
-Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Ker je p vrednost \(> \alpha\) (0.26 \(>\) 0.05) ne moremo zavrniti hipotezo \(H_0\). Kot v prejšnji analizu, delež okužencev je le vzorec, saj v ta delež niso šteti asimpotomatiki. Zaradi tega lahko izračunamo interval zaupanja za vsak delež okuženih. Računamo:
+Tudi tukaj izberemo verjetnost 95\%, tako je \(\alpha\) = 0.05. Ker je p vrednost \(> \alpha\) (0.26 \(>\) 0.05) ne moremo zavrniti hipotezo \(H_0\). Kot v prejšnji analizu, delež okužencev je le vzorec, saj v ta delež niso šteti asimptomatiki. Zaradi tega lahko izračunamo interval zaupanja za vsak delež okuženih. Računamo:
 \[\Delta = t_{(1 + \beta) /2}(\infty) \times \sqrt{\frac{p(1 - p)}{n}}\]
 kjer n je število prebivalcev države, p je delež okuženih, \(\Delta\) je razmik intervala, \(t_{p}(r)\) je vrednost studentove t-porazdelitve s r stopnjami svobode in p procent zaupanja. Izbrana \(\beta\) je 0.95, kar pomeni, da je \(\alpha = \) 0.05. Državi v i-ti vrstici pripada interval zaupanja \([F_i - \Delta, F_i + \Delta]\), kjer \(F_i\) je fatalnost i-te države. Izračunan interval je prikazan v spodnji tabeli.
 \begin{center}
@@ -369,9 +369,9 @@ Spremenljivko T delež testov (definirano v 3. poglavju) prikažemo s histogramo
 \end{figure}
 Iz grafov je razvidno, da spremenljivka ni normalna in ni simetrična. To lahko potrdimo s Shapiro–Wilk testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka je normalna in alternativna hipoteza \(H_1\): spremenljivka ni normalna. Računamo:
 \[W = \frac{(\sum_{i = 1}^{n}a_i x_{(i)})^2}{\sum_{i = 1}^{n}(x_i - \overset{\_}{x})^2} = 0.73562 \text{ in p} = 1.264e-05. \]
-Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Ker je \(p < \alpha\) (1.264e-05 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka T je simetrična in alternativna hipoteza \(H_1\): spremenljivka T je asimterična. Za test spremenljivke S dobimo rezultate:
+Izberemo 95\% interval zaupanja. \(\alpha\) je 0.05 (1 - 95\%). Ker je \(p < \alpha\) (1.264e-05 \(<\) 0.05), zavržemo ničelno hipotezo. Spremenljivka ni normalno porazdeljena, a to še ne pomeni, da ni simetrična. To preverimo s testom simetrije. Računali bomo s Miao, Gel, and Gastwirth simetričnim testom. Naj bo ničelna hipoteza \(H_0\): spremenljivka T je simetrična in alternativna hipoteza \(H_1\): spremenljivka T je asimetrična. Za test spremenljivke S dobimo rezultate:
 \[\text{Test statistike} = 2.8186 \text{ in p-value} =  0.018.\]
-Tudi tukaj izberemo verjetnost 95\%, tako je \alpha = 0.05. Ker je p vrednost \(< \alpha\) (0.018 \(<\) 0.05) zavrnemo ničelno hipotezo \(H_0\). Spremenčjivka T ni normalno porazdeljena in je asimetrična.
+Tudi tukaj izberemo verjetnost 95\%, tako je \(\alpha\) = 0.05. Ker je p vrednost \(< \alpha\) (0.018 \(<\) 0.05) zavrnemo ničelno hipotezo \(H_0\). Spremenljivka T ni normalno porazdeljena in je asimetrična.
 
 \subsection{Korelacijska analiza}
 Korelacijsko analizo bom razdelil na tri dele in sicer:
@@ -392,8 +392,8 @@ Zanima me kako je mediana starosti vplivala na druge spremenljivke in sicer na �
     \subfigure{\includegraphics[width=0.4\textwidth]{vpliv_med_pop_na_fatalnost}}
 \end{figure}
 Velja, da v nobenem diagramu uspemo zaznati nek trend, toda to še ne pomeni, da so si pari spremenljivk neodvisni. Vsako korelacijo lahko izmerimo z Pearsonovim koeficientom korelacije:
-\[r_1 = \frac{Cov(M,ŠO)}{\sigma_{M} \sigma_{ŠO}} = -0.0258 r_2 = \frac{Cov(M,ŠM)}{\sigma_{M} \sigma_{ŠM}} = 0.0902\]
-\[r_3 = \frac{Cov(M,D)}{\sigma_{M} \sigma_{D}} = -0.2203 r_4 = \frac{Cov(M,F)}{\sigma_{M} \sigma_{F}} = -0.0845\]
+\[r_1 = \frac{Cov(M,ŠO)}{\sigma_{M} \sigma_{ŠO}} = -0.0258 \text{ } r_2 = \frac{Cov(M,ŠM)}{\sigma_{M} \sigma_{ŠM}} = 0.0902\]
+\[r_3 = \frac{Cov(M,D)}{\sigma_{M} \sigma_{D}} = -0.2203 \text{ } r_4 = \frac{Cov(M,F)}{\sigma_{M} \sigma_{F}} = -0.0845\]
 
 kjer so \(\sigma_{M}\) standardni odklon spremenljivke M, \(\sigma_{ŠO}\) standardni odklon spremenljivke ŠO, \(\sigma_{ŠM}\) standardni odklon spremenljivke ŠM, \(\sigma_{D}\) standardni odklon spremenljivke D in \(\sigma_{F}\) standardni odklon spremenljivke F. Noben koeficient ni dovolj velik, da bi lahko smatrali, da obstaja močna povezanost med spremenljivkima. Pravzaprav ker je vsak koeficient tako blizu ničle lahko smatramo, da sta spremenljivka M mediana starosti ne vpliva na ostale izbrane spremenljivke, to pa še ni gotovo. Ker je število okuženecv le vzorec, ker niso šteti asimptomatiki, lahko izračunamo interval zaupanja za zgornje korelacijske koeficiente. V R-ju lahko izračunamo 95\% interval zaupanja z ukazom cor.test(M,X, method = "pearson"), kjer X je izbrana spremenljivka. Izračunani intervali zaupanjaa so:
 \[[r_1 - \Delta_1, r_1 + \Delta_1] = [-0.4019, 0.3577]\]
@@ -423,7 +423,12 @@ Kot v razdelku 4.2.1 je število okuženecv le vzorec, saj niso šteti asimptoma
 \[[r_1 - \Delta_1, r_1 + \Delta_1] = [0.4568, 0.86]\]
 \[[r_2 - \Delta_2, r_2 + \Delta_2] = [-0.45, 0.3053]\]
 
-Da bi bila spremenljivka T v korelaciji z neko drugo izbrano spremenljivko, bi moral biti koeficient korelacije močno pozitiven oziroma večji od 0.7 ali močno negativen oziroma manjši od -0.7. Prvi interval zadošča temu pogoju, saj \(r_1\) je večji od 0.7. Drugi interval pa nam pove, da ne obstaja z verjetnostjo 95\% močna povezanost med spremenljivkima T in F.
+Drugi interval nam pove, da ne obstaja z verjetnostjo 95\% močna povezanost med spremenljivkima T in F. Testirati moramo srednjo korelacijo med T in D. Če je korelacijska moč večja od 0.3, D in T sta si zagotovo srednjo močno korelirana. To opravimo z cor2.test \cite{github}. Naj bo ničelna hipoteza \(H_0\): spremenljivki D in T si nista srednje močno povezani in \(H_1\): spremenljivki D in T sta srednje močno povezani. Izračunamo cor2.test(r1,0.3, n), kjer n je elementov vzorca:
+
+\[\text{Test statistike} = 2.778 \text{ in p} =  0.003.\]
+Izbrana \(\beta\) je 0.95, kar pomeni, da \(\alpha\) je 0.05. Ker je vrednost p vrednost manjša od 0.05 lahko zavržemo ničelno hipotezo \(H_0\). Spremenljivki D in T sta si vsaj srednje močno povezani. Mogoče pa sta si tudi zelo močno korelirani. Spremenljivki D in T sta si zelo močno korelirani, če njihova korelacijska moč je večja od 0.7. To lahko spet preverimo z cor2.test. Naj bo ničelna hipoteza \(H_0\): spremenljivki D in T si nista zelo močno povezani in \(H_1\): spremenljivki D in T sta zelo močno povezani. Izračunamo cor2.test(r1,0.7, n), kjer n je elementov vzorca:
+\[\text{Test statistike} = 0.124 \text{ in p} = 0.451.\]
+Izbrana \(\beta\) je 95\%, kar pomeni, da \(\alpha\) = 0.05. Ker p vrednost ni manjša od 0.05 ne moremo zavrniti ničelne hipoteze \(H_0\), to pa še ne pomeni, da spremenljivki D in T si nista zelo močno povezani.
 
 \subsubsection{Število dni do vrha prvega vala okuženih}
 
@@ -444,12 +449,24 @@ Ker je število okuženecv le vzorec, izračunamo 95\% interval zaupanja za kore
 \[[r_1 - \Delta_1, r_1 + \Delta_1] = [0.3976, 0.8399]\]
 \[[r_2 - \Delta_2, r_2 + \Delta_2] = [0.2644, 0.7898]\]
 
+Testirati moramo srednjo korelacijo med Š in D ter Š in F. Če je korelacijska moč večja od 0.3, spremenljivki sta si zagotovo srednjo močno korelirana. To opravimo z cor2.test \cite{github}. Najprej testiramo srednjo korelacijo spremenljivk Š in D. Naj bo ničelna hipoteza \(H_0\): spremenljivki Š in D si nista srednje močno povezani in \(H_1\): spremenljivki Š in D sta srednje močno povezani. Izračunamo cor2.test(\(r_1\),0.3, n), kjer n je elementov vzorca:
+
+\[\text{Test statistike} = 2.433 \text{ in p} =  0.007.\]
+Izbrana ,\(\beta\) je 0.95, kar pomeni, da \(\alpha\) je 0.05. Ker je vrednost p vrednost manjša od 0.05 lahko zavržemo ničelno hipotezo \(H_0\). Spremenljivki Š in D sta si vsaj srednje močno povezani. Mogoče pa sta si tudi zelo močno korelirani. Spremenljivki Š in D sta si zelo močno korelirani, če njihova korelacijska moč je večja od 0.7. To lahko spet preverimo z cor2.test. Naj bo ničelna hipoteza \(H_0\): spremenljivki Š in D si nista zelo močno povezani in \(H_1\): spremenljivki Š in D sta zelo močno povezani. Izračunamo cor2.test(r1,0.7, n), kjer n je elementov vzorca:
+\[\text{Test statistike} = -0.221 \text{ in p} = 0.587.\]
+Izbrana \(\beta\) je 95\%, kar pomeni, da \(\alpha\) = 0.05. Ker p vrednost ni manjša od 0.05 ne moremo zavrniti ničelne hipoteze \(H_0\), to pa še ne pomeni, da spremenljivki Š in D si nista zelo močno povezani.
+
+Enak test opravimo za spremenljivki Š in F. Naj bo ničelna hipoteza \(H_0\): spremenljivki Š in F si nista srednje močno povezani in \(H_1\): spremenljivki Š in F sta srednje močno povezani. Izračunamo cor2.test(\(r_2\),0.3, n), kjer n je elementov vzorca:
+
+\[\text{Test statistike} = 1.72 \text{ in p} =  0.043.\]
+Izbrana ,\(\beta\) je 0.95, kar pomeni, da \(\alpha\) je 0.05. Ker je vrednost p vrednost manjša od 0.05 lahko zavržemo ničelno hipotezo \(H_0\). Spremenljivki Š in F sta si vsaj srednje močno povezani.
+
 
 \section{Zaključki}\
 Iz analize spremenljivk lahko trdimo, da spremenljivke število dni do vrhunca prvega vala okuženih, števila dni do vrhunca prvega vala mrtvih, delež okuženih, delež mrtvih in delež testov niso normalno porazdeljene. Sklepamo lahko, da na te spremenljivke vplivajo drugi različni faktorji, kot je čas, ki je potrebovala posamezna država za regulacije (maske, rokavice in socialno distanciranje), saj vsaka država je ukrepala poljubno. \\
 Iz korelacijske analiza lahko smatramo, da spremenljivka mediane starosti ni lineareno korelirana z številom dni do vrhunca prvega vala okuženih, številom dni do vrhunca prvega vala mrtvih, deležom okuženih do vrhunca prvega vala okuženih, deležom mrtvih do vrhunca prvega vala okuženih. Noben koeficient korelacije ni pozitivno močen ali negativno močen, pravzaprav so vsi zelo blizu ničli, razen za delež okuženih. Podobno velja za izračunane intervale zaupanja zaradi tega se sluti, da spremenljivka mediana starosti ne vpliva na ostale izbrane spremenljivke. \\
-Korelacijska analiza deleža testov in drugih izbranih spremenljivk je privedla do zanimivih rezultatov. Izkaže se, da je spremenljivka deleža testov linearno povezana z deležom okuženih, saj če država opravi več testov lahko zazna več okužencev in veča zaznani delež okuženih. Enako se ne izkaže za fatalnost virusa. Na fatalnost vplivajo tudi drugi faktorji, kot so zmogljivost bolnišnic in če je bolnik imel še druge bolezni. \\
-Korelacijska analiza števila dni do vrha prvega vala okuženih in drugih izbranih spremenljivk je tudi privedla do zanimivih rezultatov. Število dni do vrha prvega vala okuženih in delež okuženih sta si skoraj linearno povezani. Lahko zaklučimo, da je smiselno, da obstaja neka povezanost med spremenljivkima, saj v večjem številu dni se lahko zazna in zboli več okuženih ljudi. Podobno velja za spremenljivki število dni do vrha prvega vala okuženih in fatalnost, kjer linearna korelacija obstaj, toda ni tako visoka, da bi jo smatrali za močno. Se pravi, ne moremo trditi, da sta ti dve spremenljivki odvisni. Smatramo lahko, da daljša je prva polovica prvega vala okuženih več bo okuženih in posledično več bo mrtvih. \\
+Korelacijska analiza deleža testov in drugih izbranih spremenljivk je privedla do zanimivih rezultatov. Izkaže se, da je spremenljivka deleža testov srednje močnp linearno povezana z deležom okuženih, saj če država opravi več testov lahko zazna več okužencev in veča zaznani delež okuženih. Enako se ne izkaže za fatalnost virusa. Na fatalnost vplivajo tudi drugi faktorji, kot so zmogljivost bolnišnic in če je bolnik imel še druge bolezni. \\
+Korelacijska analiza števila dni do vrha prvega vala okuženih in drugih izbranih spremenljivk je tudi privedla do zanimivih rezultatov. Število dni do vrha prvega vala okuženih in delež okuženih sta si srednje močno linearno povezani. Lahko zaklučimo, da je smiselno, da obstaja neka povezanost med spremenljivkima, saj v večjem številu dni se lahko zazna in zboli več okuženih ljudi. Podobno velja za spremenljivki število dni do vrha prvega vala okuženih in fatalnost, kjer linearna korelacija obstaja je srednje močnao. Smatramo lahko, da daljša je prva polovica prvega vala okuženih več bo okuženih in posledično več bo mrtvih. \\
 Globalno gledano se je izkazalo, da mediana starosti populacije ni igrala tako pomebne vloge v širjenjem virusa v prvi polovici prvega vala okuženih. Obratno velja za delež testov in število dni do vrha prvega vala okuženih. Za katerih velja, da sta pozitvno linearno povezani z deležom okuženih. Iz tega sledi, da višje je število opravljenih testov višje je število zaznanih okuženih in višje je število dni do vrha prvega vala okuženih višji je delež okuženih.
 
 \section{Literatura}
