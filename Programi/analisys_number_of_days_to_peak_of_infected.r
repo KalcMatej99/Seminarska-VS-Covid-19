@@ -17,5 +17,9 @@ plot_ly(x = N, y = db$Country_Name, type = 'bar', orientation = 'h') %>% layout(
 shapiro.test(N)
 
 symmetry.test(N, option = "MGG")
-symmetry.test(N, option = "CM")
-symmetry.test(N, option = "M")
+
+minimum <- min(N)
+maximum <- max(N)
+
+medianN <- median(N)
+razponN <- IQR(N)

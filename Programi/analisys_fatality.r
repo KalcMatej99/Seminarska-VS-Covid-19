@@ -31,3 +31,11 @@ df <- cbind(namesOfCountrys, df)
 
 fileIntervalZaupanjaFatalnost <- '/home/matej/Documents/Seminarska-VS-Covid-19//Podatki/intervalZaupanjaFatalnost.csv'
 write.csv(df, fileIntervalZaupanjaFatalnost)
+
+
+
+minimum <- min(prop)
+maximum <- max(prop)
+
+medianN <- median(prop)
+razponN <- IQR(prop)

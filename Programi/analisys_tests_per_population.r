@@ -16,3 +16,10 @@ plot_ly(x = prop, y = db$Country_Name, type = 'bar', orientation = 'h') %>% layo
 shapiro.test(prop)
 
 symmetry.test(prop)
+
+
+minimum <- min(prop)
+maximum <- max(prop)
+
+medianN <- median(prop)
+razponN <- IQR(prop)

@@ -10,7 +10,6 @@ plot(S,P,
      xlab = "Delež testov",
      ylab = "Delež okuženih")
 
-abline(lm(P ~ S), col = "red")
 
 r <- cor(S, P,  method = "pearson")
 s <- cor(S, P,  method = "spearman")

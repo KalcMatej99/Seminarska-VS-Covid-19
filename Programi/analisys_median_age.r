@@ -12,5 +12,10 @@ hist(medianAge, main = "Histogram mediane starosti držav", xlab="Mediana staros
 plot_ly(x = medianAge, y = db$Country_Name, type = 'bar', orientation = 'h') %>% layout(title="Mediana starosti")
 
 shapiro.test(medianAge)
-
 symmetry.test(medianAge)
+
+minimum <- min(medianAge)
+maximum <- max(medianAge)
+
+meanMedianAge <- mean(medianAge)
+stdeviation <- sd(medianAge)
