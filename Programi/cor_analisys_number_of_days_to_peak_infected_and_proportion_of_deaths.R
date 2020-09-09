@@ -10,7 +10,7 @@ N <- as.numeric(dataFrameDates$date_diff)
 P <- 100 * db$Deaths_to_peak/db$Infected_to_peak
 
 plot(N,P,                                  
-     main = "Vpliv števila dni do vrha prvega vala okužencev na delež mrtvih",
+     main = "Vpliv števila dni do vrha prvega vala okužencev na fatalnost",
      xlab = "Število dni do vrha prvega vala okužencev",
      ylab = "Delež mrtvih")
 
